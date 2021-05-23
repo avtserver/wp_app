@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include wp_app *.css
+recursive-include wp_app *.csv
+recursive-include wp_app *.html
+recursive-include wp_app *.ico
+recursive-include wp_app *.js
+recursive-include wp_app *.json
+recursive-include wp_app *.md
+recursive-include wp_app *.png
+recursive-include wp_app *.py
+recursive-include wp_app *.svg
+recursive-include wp_app *.txt
+recursive-exclude wp_app *.pyc
