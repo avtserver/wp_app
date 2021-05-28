@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/assets/wp_app/css/hidden_beauty_row.css">
+<!--<div>-->
+<!--	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>-->
+<!--</div>-->
+<!-- this is a sample default list template -->
+
+<!--	<card-header>-->
+<!--		{{first_name}}-->
+<!--	</card-header>-->
+<div id="book">
+<a href="{{ doc.route }}">
+	<h2 card-header>
+		{{first_name}} {{last_name}}
+	</h2></a>
+	<div class="text">
+		<p><b>Referral code  </b><br>
+			{{referred_by}}
+		<p><b>Email ID </b><br>
+			{{email_id}}</p>
+		<p><b>Mobile Number </b><br>
+			{{mobile_number}}</p>
+		<p><b>Age Group </b><br>
+			{{age_group}}</p>
+		<a href="{{ doc.route }}"><button type="button">Show Details</button></a>
+			<div id="card-footer">
+				{{name}}
+			</div>
+</div>
+</div>
+

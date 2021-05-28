@@ -1,0 +1,13 @@
+.me-card{
+    height: 470px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    /*background: #fffffb;*/
+    background-image: linear-gradient(110deg, #ffffd9 0, #ffffd0 12.5%, #fafcc7 25%, #edf7be 37.5%, #def2b5 50%, #ceedad 62.5%, #bee8a7 75%, #ade4a3 87.5%, #9ce0a1 100%);
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top:15px;
+    margin-bottom:15px;
+    text-align:left;
+}

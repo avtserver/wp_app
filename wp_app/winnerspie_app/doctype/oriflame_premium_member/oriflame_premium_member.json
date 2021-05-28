@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "field:sponser_id",
+ "creation": "2021-05-23 18:43:35.742416",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sponser_id",
+  "name1",
+  "designation",
+  "mobile_number",
+  "email",
+  "column_break_6",
+  "profile_image",
+  "cover_image",
+  "short_bio_data",
+  "about_me_section",
+  "about_me",
+  "gallery_section",
+  "gallery_image",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "sponser_id",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Sponser ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Designation ",
+   "options": "Sapphire Director\nDirector\nGold Director\nSilver Director",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach Image",
+   "label": "Cover Image"
+  },
+  {
+   "fieldname": "short_bio_data",
+   "fieldtype": "Small Text",
+   "label": "Short Bio-Data"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "about_me_section",
+   "fieldtype": "Section Break",
+   "label": "About me"
+  },
+  {
+   "fieldname": "about_me",
+   "fieldtype": "Text Editor",
+   "label": "About me"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "gallery_section",
+   "fieldtype": "Section Break",
+   "label": "Gallery Section"
+  },
+  {
+   "fieldname": "gallery_image",
+   "fieldtype": "Table",
+   "label": "Gallery Image",
+   "options": "Member Gallery"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2021-05-23 18:43:35.742416",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "Oriflame Premium Member",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "premium-member",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,29 @@
+
+<!--<h2>Name : {{hbdetail.first_name}} {{hbdetail.last_name}}</h2>-->
+<!--<h2>Series : {{hbdetail.name}} </h2>-->
+<!--<p>Referred By : {{hbdetail.referred_by}}</p>-->
+<!--<p>Email ID : {{hbdetail.email_id}}</p>-->
+<!--<p>Mobile Number : {{hbdetail.mobile_number}}</p>-->
+<!--<p>Age Group : {{hbdetail.age_group}}</p>-->
+
+<link rel="stylesheet" href="/assets/wp_app/css/hidden_beauty_row.css">
+<div id="book">
+
+    <h2 card-header>
+        {{hbdetail.first_name}} {{hbdetail.last_name}}
+    </h2>
+    <div class="text">
+        <p><b>Referral code  </b><br>
+            {{hbdetail.referred_by}}
+        <p><b>Email ID </b><br>
+            {{hbdetail.email_id}}</p>
+        <p><b>Mobile Number </b><br>
+            {{hbdetail.mobile_number}}</p>
+        <p><b>Age Group </b><br>
+            {{hbdetail.age_group}}</p>
+        <button type="button">Show Details</button>
+        <div id="card-footer">
+            {{hbdetail.name}}
+        </div>
+    </div>
+</div>

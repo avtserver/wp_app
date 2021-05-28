@@ -1,0 +1,1045 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "format:{######}",
+ "creation": "2021-05-27 14:01:40.337753",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_section",
+  "first_name",
+  "last_name",
+  "age_group",
+  "column_break_5",
+  "mobile_number",
+  "email_id",
+  "book_appointment",
+  "referred_by",
+  "area_of_concern_section",
+  "which_is_your_area_of_concern2",
+  "color_cosmetics_check",
+  "skin_care",
+  "hair_care",
+  "personal_care",
+  "health_wellness",
+  "assistance_from_us_section",
+  "assistance_from_us",
+  "pick_a_date",
+  "route",
+  "published",
+  "color_cosmetics_section",
+  "color_cosmetics",
+  "why_do_you_love_makeup",
+  "boosts_confidence",
+  "to_look_younger",
+  "enhance_beauty",
+  "it_is_so_much_fun",
+  "clear_complexion",
+  "will_keep_your_skin_protected",
+  "makeup_makes_you_look_perfect_in_photos",
+  "you_can_showcase_your_sense_of_selfcare",
+  "what_all_things_do_you_use_for_your_face_makeup",
+  "foundation",
+  "concealer",
+  "compact",
+  "cc_cream",
+  "blusher",
+  "other",
+  "data_41",
+  "when_do_you_prefer_applying_foundation",
+  "what_all_things_do_you_use_for_your_eyemakeup",
+  "eye_liner",
+  "mascara",
+  "eye_pencil",
+  "eye_shadow",
+  "browcara",
+  "other2",
+  "data_50",
+  "what_all_things_do_you_use_for_your_lipmakeup",
+  "lip_balm",
+  "lip_liner",
+  "lip_gloss",
+  "lipstick",
+  "what_all_things_do_you_use_for_your_nailmakeup",
+  "matte_nail_polish",
+  "shiny_metallic_nail_polish",
+  "top_coat",
+  "base_coat",
+  "nail_file",
+  "whats_your_monthly_budget_for_you_color_cosmetics",
+  "lipstick_section",
+  "which_type_of_lipstick_do_you_prefer",
+  "matte_lipstick",
+  "gloss_lipstick",
+  "creamy_lipstick",
+  "longstay_lipstick",
+  "skin_care_section",
+  "skin_care_heading",
+  "what_is_your_skin_type",
+  "what_do_you_use_to_clean_your_face",
+  "does_your_skin_feel_dried_up_and_stretched_after_applying_soap",
+  "do_you_look_after_your_skin_regularly",
+  "does_your_pores_remain_open",
+  "are_you_worried_about",
+  "skin_sagging",
+  "lip_wrinkles",
+  "lines_around_eyes",
+  "glabellar_wrinkles",
+  "spots_and_scars_on_face",
+  "puffiness",
+  "uneven_skin_tone",
+  "dark_circles",
+  "pimples",
+  "sticky_skin",
+  "blackheads",
+  "wrinkles",
+  "roughness",
+  "under_eye_dark_circles",
+  "enlarged_pores",
+  "redness",
+  "dullness",
+  "whiteheads",
+  "dehydrated_skin",
+  "how_often_do_you_use_face_scrub__face_mask",
+  "whats_your_monthly_budget_for_you_skin_care",
+  "hair_care_section",
+  "hair_care_heading",
+  "whats_your_hair_type",
+  "what_are_the_products_you_prefer_using_for_your_haircare",
+  "any_shampoo",
+  "specific_shampoo_for_your_hair_type",
+  "hair_conditioner",
+  "hair_mask",
+  "hair_oil",
+  "hair_serum",
+  "hair_treatment_any",
+  "how_frequently_you_shampoo_your_hair",
+  "do_you_use_any_products_for_your_hair_styling",
+  "what_are_you_worries_about",
+  "whats_your_monthly_budget_for_you_hair_care",
+  "personal_care_section",
+  "personal_care__heading",
+  "are_you_worried_about_pcare",
+  "dry_hands_and_feet",
+  "wrinkles_on_hands_and_feet",
+  "hardness_of_fingertips_of_both_hands_and_feet",
+  "cracking_of_foot_heels",
+  "bad_smell_of_your_feet",
+  "roughness_of_body",
+  "bad_smell_of_body",
+  "do_you_prefer_using_protection_against_sun_sun_care",
+  "which_fragrance_products_do_you_prefer_using",
+  "roll_on_deodorant",
+  "body_deo_spray",
+  "body_mist",
+  "perfume",
+  "how_often_do_you_use_a_perfume_for_you",
+  "whats_your_budget_for_the_personal_care",
+  "health__wellness_section",
+  "health_wellness_heading",
+  "are_you_currently_using_any_food_supplement",
+  "what_is_the_purpose_of_using_food_supplement",
+  "muscle_building_protein_intake",
+  "staying_fit",
+  "for_having_a_healthy_and_complete_diet_nutrition",
+  "for_immunity_of_the_body",
+  "for_having_an_antioxidant",
+  "specific_reasons",
+  "do_you_have_an_intake_of_proper_balanced_diet",
+  "whats_the_budget_for_your_health_wellness"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_section",
+   "fieldtype": "Section Break",
+   "label": "PROFILE INFO"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Select",
+   "label": "Age Group",
+   "options": "15-20\n20-30\n30-40\n40-50\n50+"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "length": 10,
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "options": "Email"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Referred by",
+   "length": 8
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "area_of_concern_section",
+   "fieldtype": "Section Break",
+   "label": "AREA OF CONCERN"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "depends_on": "book_appointment",
+   "fieldname": "assistance_from_us_section",
+   "fieldtype": "Section Break",
+   "label": "MAKE AN APPOINTMENT"
+  },
+  {
+   "fieldname": "assistance_from_us",
+   "fieldtype": "HTML",
+   "label": "Assistance from us",
+   "options": "<h2><b>ASSISTANCE FROM US</b></h2>Which time will be suitable for you for communicating with our support for your customized products over a phone call?<br><br>"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "pick_a_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Pick a Date & Time"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Published"
+  },
+  {
+   "fieldname": "color_cosmetics",
+   "fieldtype": "HTML",
+   "label": "COLOR COSMETICS",
+   "options": "<h2><b>COLOR COSMETICS</b></h2><p>The art of make-up makes any face look magical with colors and a touch of brightness to make you ready for any occasion, as you chose Color Cosmetics so you're invited to this section! Please fill in so we can give you the best customized solution for you.<br><br></p>"
+  },
+  {
+   "default": "0",
+   "fieldname": "skin_care",
+   "fieldtype": "Check",
+   "label": "<b>SKIN CARE</b>"
+  },
+  {
+   "default": "0",
+   "fieldname": "hair_care",
+   "fieldtype": "Check",
+   "label": "<b>HAIR CARE</b>"
+  },
+  {
+   "description": "(YOU CAN CHOOSE MORE THAN ONE OPTIONS)",
+   "fieldname": "which_is_your_area_of_concern2",
+   "fieldtype": "HTML",
+   "label": "WHICH IS YOUR AREA OF CONCERN2",
+   "options": "<h4>WHICH IS YOUR AREA OF CONCERN?</h4>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "personal_care",
+   "fieldtype": "Check",
+   "label": "<b>PERSONAL CARE</b>"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_wellness",
+   "fieldtype": "Check",
+   "label": "<b>HEALTH &amp; WELLNESS</b>"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "color_cosmetics_check",
+   "fieldname": "color_cosmetics_section",
+   "fieldtype": "Section Break",
+   "label": "COLOR COSMETICS"
+  },
+  {
+   "default": "0",
+   "fieldname": "color_cosmetics_check",
+   "fieldtype": "Check",
+   "label": "<b>COLOR COSMETICS</b> (Make-up Products)"
+  },
+  {
+   "default": "0",
+   "fieldname": "book_appointment",
+   "fieldtype": "Check",
+   "label": "Book Appointment"
+  },
+  {
+   "fieldname": "why_do_you_love_makeup",
+   "fieldtype": "HTML",
+   "label": "WHY DO YOU LOVE MAKEUP?",
+   "options": "WHY DO YOU LOVE MAKEUP?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "boosts_confidence",
+   "fieldtype": "Check",
+   "label": "Boosts confidence"
+  },
+  {
+   "default": "0",
+   "fieldname": "to_look_younger",
+   "fieldtype": "Check",
+   "label": "To look younger"
+  },
+  {
+   "default": "0",
+   "fieldname": "enhance_beauty",
+   "fieldtype": "Check",
+   "label": "Enhance beauty"
+  },
+  {
+   "default": "0",
+   "fieldname": "it_is_so_much_fun",
+   "fieldtype": "Check",
+   "label": "It is so much fun"
+  },
+  {
+   "default": "0",
+   "fieldname": "clear_complexion",
+   "fieldtype": "Check",
+   "label": "Clear complexion"
+  },
+  {
+   "default": "0",
+   "fieldname": "will_keep_your_skin_protected",
+   "fieldtype": "Check",
+   "label": "Will keep your Skin Protected"
+  },
+  {
+   "default": "0",
+   "fieldname": "makeup_makes_you_look_perfect_in_photos",
+   "fieldtype": "Check",
+   "label": "Makeup makes you look perfect in photos"
+  },
+  {
+   "default": "0",
+   "fieldname": "you_can_showcase_your_sense_of_selfcare",
+   "fieldtype": "Check",
+   "label": "You can showcase your sense of self-care"
+  },
+  {
+   "fieldname": "what_all_things_do_you_use_for_your_face_makeup",
+   "fieldtype": "HTML",
+   "label": "WHAT ALL THINGS DO YOU USE FOR YOUR FACE MAKE-UP?",
+   "options": "WHAT ALL THINGS DO YOU USE FOR YOUR FACE MAKE-UP?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "foundation",
+   "fieldtype": "Check",
+   "label": "Foundation"
+  },
+  {
+   "default": "0",
+   "fieldname": "concealer",
+   "fieldtype": "Check",
+   "label": "Concealer"
+  },
+  {
+   "default": "0",
+   "fieldname": "compact",
+   "fieldtype": "Check",
+   "label": "Compact"
+  },
+  {
+   "default": "0",
+   "fieldname": "cc_cream",
+   "fieldtype": "Check",
+   "label": "CC cream"
+  },
+  {
+   "default": "0",
+   "fieldname": "blusher",
+   "fieldtype": "Check",
+   "label": "Blusher"
+  },
+  {
+   "default": "0",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "depends_on": "other",
+   "fieldname": "data_41",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "when_do_you_prefer_applying_foundation",
+   "fieldtype": "Select",
+   "label": "WHEN DO YOU PREFER APPLYING FOUNDATION?",
+   "options": "Everyday while going out of house\nOccasionally\nMarriage & Parties\nOnly at night time party or functions"
+  },
+  {
+   "fieldname": "what_all_things_do_you_use_for_your_eyemakeup",
+   "fieldtype": "HTML",
+   "label": "WHAT ALL THINGS DO YOU USE FOR YOUR EYE-MAKEUP?",
+   "options": "WHAT ALL THINGS DO YOU USE FOR YOUR EYE-MAKEUP?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "eye_liner",
+   "fieldtype": "Check",
+   "label": "Eye Liner"
+  },
+  {
+   "default": "0",
+   "fieldname": "mascara",
+   "fieldtype": "Check",
+   "label": "Mascara"
+  },
+  {
+   "default": "0",
+   "fieldname": "eye_pencil",
+   "fieldtype": "Check",
+   "label": "Eye Pencil"
+  },
+  {
+   "default": "0",
+   "fieldname": "eye_shadow",
+   "fieldtype": "Check",
+   "label": "Eye shadow"
+  },
+  {
+   "default": "0",
+   "fieldname": "browcara",
+   "fieldtype": "Check",
+   "label": "Browcara"
+  },
+  {
+   "default": "0",
+   "fieldname": "other2",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "depends_on": "other2",
+   "fieldname": "data_50",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "what_all_things_do_you_use_for_your_lipmakeup",
+   "fieldtype": "HTML",
+   "label": "WHAT ALL THINGS DO YOU USE FOR YOUR LIP-MAKEUP?",
+   "options": "WHAT ALL THINGS DO YOU USE FOR YOUR LIP-MAKEUP?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "lip_balm",
+   "fieldtype": "Check",
+   "label": "Lip Balm"
+  },
+  {
+   "default": "0",
+   "fieldname": "lip_liner",
+   "fieldtype": "Check",
+   "label": "Lip Liner"
+  },
+  {
+   "default": "0",
+   "fieldname": "lip_gloss",
+   "fieldtype": "Check",
+   "label": "Lip Gloss"
+  },
+  {
+   "default": "0",
+   "fieldname": "lipstick",
+   "fieldtype": "Check",
+   "label": "Lipstick"
+  },
+  {
+   "depends_on": "lipstick",
+   "fieldname": "lipstick_section",
+   "fieldtype": "Section Break",
+   "label": "Lipstick"
+  },
+  {
+   "fieldname": "which_type_of_lipstick_do_you_prefer",
+   "fieldtype": "HTML",
+   "label": "WHICH TYPE OF LIPSTICK DO YOU PREFER?",
+   "options": "WHICH TYPE OF LIPSTICK DO YOU PREFER?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "matte_lipstick",
+   "fieldtype": "Check",
+   "label": "Matte Lipstick"
+  },
+  {
+   "default": "0",
+   "fieldname": "gloss_lipstick",
+   "fieldtype": "Check",
+   "label": "Gloss Lipstick"
+  },
+  {
+   "default": "0",
+   "fieldname": "creamy_lipstick",
+   "fieldtype": "Check",
+   "label": "Creamy Lipstick"
+  },
+  {
+   "default": "0",
+   "fieldname": "longstay_lipstick",
+   "fieldtype": "Check",
+   "label": "Long-stay Lipstick"
+  },
+  {
+   "fieldname": "what_all_things_do_you_use_for_your_nailmakeup",
+   "fieldtype": "HTML",
+   "label": "WHAT ALL THINGS DO YOU USE FOR YOUR NAIL-MAKEUP?",
+   "options": "WHAT ALL THINGS DO YOU USE FOR YOUR NAIL-MAKEUP?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "matte_nail_polish",
+   "fieldtype": "Check",
+   "label": "Matte Nail Polish"
+  },
+  {
+   "default": "0",
+   "fieldname": "shiny_metallic_nail_polish",
+   "fieldtype": "Check",
+   "label": "Shiny/ Metallic Nail Polish"
+  },
+  {
+   "default": "0",
+   "fieldname": "top_coat",
+   "fieldtype": "Check",
+   "label": "Top Coat"
+  },
+  {
+   "default": "0",
+   "fieldname": "base_coat",
+   "fieldtype": "Check",
+   "label": "Base Coat"
+  },
+  {
+   "default": "0",
+   "fieldname": "nail_file",
+   "fieldtype": "Check",
+   "label": "Nail fIle"
+  },
+  {
+   "fieldname": "whats_your_monthly_budget_for_you_color_cosmetics",
+   "fieldtype": "Select",
+   "label": "WHAT'S YOUR MONTHLY BUDGET FOR YOU COLOR COSMETICS?",
+   "options": "Up to 500/-\n500/- to 1000/-\n1000/- to 3000/-\n3000+"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "skin_care",
+   "fieldname": "skin_care_section",
+   "fieldtype": "Section Break",
+   "label": "SKIN CARE"
+  },
+  {
+   "fieldname": "skin_care_heading",
+   "fieldtype": "HTML",
+   "label": "Skin Care",
+   "options": "<h2>SKIN CARE</h2>\nAs you chose Skincare you're welcome to this section. Choosing to have a healthy face &amp; skin is a blessing and you have made this choice so we will provide you with the best customized solution for your problems!<br><br>"
+  },
+  {
+   "fieldname": "what_is_your_skin_type",
+   "fieldtype": "Select",
+   "label": "WHAT IS YOUR SKIN TYPE?",
+   "options": "Oily\nCombination\nNormal\nDry\nSensitive\nNot sure"
+  },
+  {
+   "fieldname": "what_do_you_use_to_clean_your_face",
+   "fieldtype": "Select",
+   "label": "WHAT DO YOU USE TO CLEAN YOUR FACE?",
+   "options": "Soap\nFace wash\nAny Cleanser\nCleanser as per your skin type"
+  },
+  {
+   "fieldname": "does_your_skin_feel_dried_up_and_stretched_after_applying_soap",
+   "fieldtype": "Select",
+   "label": "DOES YOUR SKIN FEEL DRIED UP AND STRETCHED AFTER APPLYING SOAP?",
+   "options": "Yes\nNo\nAt times"
+  },
+  {
+   "fieldname": "do_you_look_after_your_skin_regularly",
+   "fieldtype": "Select",
+   "label": "DO YOU LOOK AFTER YOUR SKIN REGULARLY?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "does_your_pores_remain_open",
+   "fieldtype": "Select",
+   "label": "DOES YOUR PORES REMAIN OPEN?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "are_you_worried_about",
+   "fieldtype": "HTML",
+   "label": "ARE YOU WORRIED ABOUT...",
+   "options": "ARE YOU WORRIED ABOUT...<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "pimples",
+   "fieldtype": "Check",
+   "label": "Pimples"
+  },
+  {
+   "default": "0",
+   "fieldname": "sticky_skin",
+   "fieldtype": "Check",
+   "label": "Sticky Skin"
+  },
+  {
+   "default": "0",
+   "fieldname": "blackheads",
+   "fieldtype": "Check",
+   "label": "Blackheads"
+  },
+  {
+   "default": "0",
+   "fieldname": "wrinkles",
+   "fieldtype": "Check",
+   "label": "Wrinkles"
+  },
+  {
+   "default": "0",
+   "fieldname": "roughness",
+   "fieldtype": "Check",
+   "label": "Roughness"
+  },
+  {
+   "default": "0",
+   "fieldname": "under_eye_dark_circles",
+   "fieldtype": "Check",
+   "label": "Under eye dark circles"
+  },
+  {
+   "default": "0",
+   "fieldname": "lines_around_eyes",
+   "fieldtype": "Check",
+   "label": "Lines around eyes"
+  },
+  {
+   "default": "0",
+   "fieldname": "spots_and_scars_on_face",
+   "fieldtype": "Check",
+   "label": "Spots and scars on face"
+  },
+  {
+   "default": "0",
+   "fieldname": "puffiness",
+   "fieldtype": "Check",
+   "label": "Puffiness"
+  },
+  {
+   "default": "0",
+   "fieldname": "enlarged_pores",
+   "fieldtype": "Check",
+   "label": "Enlarged Pores"
+  },
+  {
+   "default": "0",
+   "fieldname": "redness",
+   "fieldtype": "Check",
+   "label": "Redness"
+  },
+  {
+   "default": "0",
+   "fieldname": "dullness",
+   "fieldtype": "Check",
+   "label": "Dullness"
+  },
+  {
+   "default": "0",
+   "fieldname": "whiteheads",
+   "fieldtype": "Check",
+   "label": "Whiteheads"
+  },
+  {
+   "default": "0",
+   "fieldname": "dehydrated_skin",
+   "fieldtype": "Check",
+   "label": "Dehydrated Skin"
+  },
+  {
+   "default": "0",
+   "fieldname": "skin_sagging",
+   "fieldtype": "Check",
+   "label": "Skin Sagging"
+  },
+  {
+   "default": "0",
+   "fieldname": "lip_wrinkles",
+   "fieldtype": "Check",
+   "label": "Lip Wrinkles"
+  },
+  {
+   "default": "0",
+   "fieldname": "glabellar_wrinkles",
+   "fieldtype": "Check",
+   "label": "Glabellar Wrinkles"
+  },
+  {
+   "default": "0",
+   "fieldname": "uneven_skin_tone",
+   "fieldtype": "Check",
+   "label": "Uneven Skin Tone"
+  },
+  {
+   "default": "0",
+   "fieldname": "dark_circles",
+   "fieldtype": "Check",
+   "label": "Dark Circles"
+  },
+  {
+   "fieldname": "how_often_do_you_use_face_scrub__face_mask",
+   "fieldtype": "Select",
+   "label": "HOW OFTEN DO YOU USE FACE SCRUB  & FACE MASK?",
+   "options": "Weekly\nOnce in 15days\nMonthly\nNever"
+  },
+  {
+   "fieldname": "whats_your_monthly_budget_for_you_skin_care",
+   "fieldtype": "Select",
+   "label": "WHAT'S YOUR MONTHLY BUDGET FOR YOU SKIN CARE?",
+   "options": "Up to 500/-\n500/- to 1000/-\n1000/- to 2000/-\nAbove 2000/-"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "hair_care",
+   "fieldname": "hair_care_section",
+   "fieldtype": "Section Break",
+   "label": "HAIR CARE"
+  },
+  {
+   "fieldname": "hair_care_heading",
+   "fieldtype": "HTML",
+   "label": "HAIR CARE",
+   "options": "<h2><b>HAIR CARE</b></h2>Your Hair Speaks for you! So choosing to have a healthy hair is indeed a great choice you made. Please fill in the form so we can know you requirements and get the best customized solutions for you!<br><br>"
+  },
+  {
+   "fieldname": "whats_your_hair_type",
+   "fieldtype": "Select",
+   "label": "WHAT'S YOUR HAIR TYPE?",
+   "options": "Oily\nSticky\nNormal\nDry"
+  },
+  {
+   "fieldname": "what_are_the_products_you_prefer_using_for_your_haircare",
+   "fieldtype": "HTML",
+   "label": "WHAT ARE THE PRODUCTS YOU PREFER USING FOR YOUR HAIRCARE",
+   "options": "WHAT ARE THE PRODUCTS YOU PREFER USING FOR YOUR HAIRCARE<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "any_shampoo",
+   "fieldtype": "Check",
+   "label": "Any Shampoo"
+  },
+  {
+   "default": "0",
+   "fieldname": "specific_shampoo_for_your_hair_type",
+   "fieldtype": "Check",
+   "label": "Specific Shampoo for your hair type"
+  },
+  {
+   "default": "0",
+   "fieldname": "hair_conditioner",
+   "fieldtype": "Check",
+   "label": "Hair Conditioner"
+  },
+  {
+   "default": "0",
+   "fieldname": "hair_mask",
+   "fieldtype": "Check",
+   "label": "Hair Mask"
+  },
+  {
+   "default": "0",
+   "fieldname": "hair_oil",
+   "fieldtype": "Check",
+   "label": "Hair Oil"
+  },
+  {
+   "default": "0",
+   "fieldname": "hair_serum",
+   "fieldtype": "Check",
+   "label": "Hair Serum"
+  },
+  {
+   "default": "0",
+   "fieldname": "hair_treatment_any",
+   "fieldtype": "Check",
+   "label": "Hair Treatment (Any)"
+  },
+  {
+   "fieldname": "how_frequently_you_shampoo_your_hair",
+   "fieldtype": "Select",
+   "label": "HOW FREQUENTLY YOU SHAMPOO YOUR HAIR?",
+   "options": "Daily\nOnce in 3 days\nWeekly"
+  },
+  {
+   "fieldname": "do_you_use_any_products_for_your_hair_styling",
+   "fieldtype": "Select",
+   "label": "DO YOU USE ANY PRODUCTS FOR YOUR HAIR STYLING?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "what_are_you_worries_about",
+   "fieldtype": "Select",
+   "label": "WHAT ARE YOU WORRIES ABOUT?",
+   "options": "Sticky Hair\nDandruff\nFrizzy Hair\nSplit Ends"
+  },
+  {
+   "fieldname": "whats_your_monthly_budget_for_you_hair_care",
+   "fieldtype": "Select",
+   "label": "WHAT'S YOUR MONTHLY BUDGET FOR YOU HAIR CARE?",
+   "options": "Up to 500/-\n500/- to 1000/-\nAbove 1000/-"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "personal_care",
+   "fieldname": "personal_care_section",
+   "fieldtype": "Section Break",
+   "label": "PERSONAL CARE"
+  },
+  {
+   "fieldname": "personal_care__heading",
+   "fieldtype": "HTML",
+   "label": "PERSONAL CARE  HEADING",
+   "options": "<h2><b>PERSONAL CARE</b></h2>\nCaring for your skin is much needed as due to the hectic schedule we forget to take care of it! So you indeed did a great choice by choosing to pamper yourself and your skin! Please fill in the form so we can get the perfect solutions for you!<br><br>"
+  },
+  {
+   "fieldname": "are_you_worried_about_pcare",
+   "fieldtype": "HTML",
+   "label": "ARE YOU WORRIED ABOUT...",
+   "options": "ARE YOU WORRIED ABOUT...<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "dry_hands_and_feet",
+   "fieldtype": "Check",
+   "label": "Dry Hands and feet"
+  },
+  {
+   "default": "0",
+   "fieldname": "wrinkles_on_hands_and_feet",
+   "fieldtype": "Check",
+   "label": "Wrinkles on hands and feet"
+  },
+  {
+   "default": "0",
+   "fieldname": "hardness_of_fingertips_of_both_hands_and_feet",
+   "fieldtype": "Check",
+   "label": "Hardness of Fingertips of both hands and feet"
+  },
+  {
+   "default": "0",
+   "fieldname": "cracking_of_foot_heels",
+   "fieldtype": "Check",
+   "label": "Cracking of Foot heels"
+  },
+  {
+   "default": "0",
+   "fieldname": "bad_smell_of_your_feet",
+   "fieldtype": "Check",
+   "label": "Bad smell of your feet"
+  },
+  {
+   "default": "0",
+   "fieldname": "roughness_of_body",
+   "fieldtype": "Check",
+   "label": "Roughness of Body"
+  },
+  {
+   "default": "0",
+   "fieldname": "bad_smell_of_body",
+   "fieldtype": "Check",
+   "label": "Bad smell of Body"
+  },
+  {
+   "fieldname": "do_you_prefer_using_protection_against_sun_sun_care",
+   "fieldtype": "Select",
+   "label": "DO YOU PREFER USING PROTECTION AGAINST SUN (SUN CARE)?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "which_fragrance_products_do_you_prefer_using",
+   "fieldtype": "HTML",
+   "label": "WHICH FRAGRANCE PRODUCTS DO YOU PREFER USING?",
+   "options": "WHICH FRAGRANCE PRODUCTS DO YOU PREFER USING?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "roll_on_deodorant",
+   "fieldtype": "Check",
+   "label": "Roll on Deodorant"
+  },
+  {
+   "default": "0",
+   "fieldname": "body_deo_spray",
+   "fieldtype": "Check",
+   "label": "Body Deo Spray"
+  },
+  {
+   "default": "0",
+   "fieldname": "body_mist",
+   "fieldtype": "Check",
+   "label": "Body Mist"
+  },
+  {
+   "default": "0",
+   "fieldname": "perfume",
+   "fieldtype": "Check",
+   "label": "Perfume"
+  },
+  {
+   "fieldname": "how_often_do_you_use_a_perfume_for_you",
+   "fieldtype": "Select",
+   "label": "HOW OFTEN DO YOU USE A PERFUME FOR YOU?",
+   "options": "Everyday\nOccasionally\nDepends on your mood\nRarely"
+  },
+  {
+   "fieldname": "whats_your_budget_for_the_personal_care",
+   "fieldtype": "Select",
+   "label": "WHAT'S YOUR BUDGET FOR THE PERSONAL CARE?",
+   "options": "Up to 500/-\n500/- to 1000/-\n1000+"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "health_wellness",
+   "fieldname": "health__wellness_section",
+   "fieldtype": "Section Break",
+   "label": "HEALTH & WELLNESS"
+  },
+  {
+   "fieldname": "health_wellness_heading",
+   "fieldtype": "HTML",
+   "label": "HEALTH WELLNESS HEADING",
+   "options": "<h2><b>HEALTH &amp; WELLNESS</b></h2>\nBeing healthy inside out is a much needed concern in today's time! So you made a great choice by choosing your Health &amp; Well being. So please fill in the form so we can understand your concern and get the perfect solutions for you Exclusively!<br><br>"
+  },
+  {
+   "fieldname": "are_you_currently_using_any_food_supplement",
+   "fieldtype": "Select",
+   "label": "ARE YOU CURRENTLY USING ANY FOOD SUPPLEMENT?",
+   "options": "Yes\nNo\nThinking of using"
+  },
+  {
+   "fieldname": "what_is_the_purpose_of_using_food_supplement",
+   "fieldtype": "HTML",
+   "label": "WHAT IS THE PURPOSE OF USING FOOD SUPPLEMENT?",
+   "options": "WHAT IS THE PURPOSE OF USING FOOD SUPPLEMENT?<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "muscle_building_protein_intake",
+   "fieldtype": "Check",
+   "label": "Muscle Building (Protein Intake)"
+  },
+  {
+   "default": "0",
+   "fieldname": "staying_fit",
+   "fieldtype": "Check",
+   "label": "Staying Fit"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_having_a_healthy_and_complete_diet_nutrition",
+   "fieldtype": "Check",
+   "label": "For having a healthy and complete diet (Nutrition)"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_immunity_of_the_body",
+   "fieldtype": "Check",
+   "label": "For Immunity of the body"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_having_an_antioxidant",
+   "fieldtype": "Check",
+   "label": "For having an Antioxidant"
+  },
+  {
+   "fieldname": "specific_reasons",
+   "fieldtype": "Select",
+   "label": "ARE YOU USING ANY HEALTH PRODUCTS (CAPSULES/ POWDER) FOR ANY SPECIFIC REASONS?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "do_you_have_an_intake_of_proper_balanced_diet",
+   "fieldtype": "Select",
+   "label": "DO YOU HAVE AN INTAKE OF PROPER BALANCED DIET?",
+   "options": "Yes\nNo\nAt sometimes"
+  },
+  {
+   "fieldname": "whats_the_budget_for_your_health_wellness",
+   "fieldtype": "Select",
+   "label": "WHAT'S THE BUDGET FOR YOUR HEALTH & WELLNESS?",
+   "options": "500/- to 1000/-\n1000/- to 2000/-\n2000/- to 5000/-\n5000+"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2021-05-28 16:34:03.271256",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "HBeauty",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "hidden-beauty",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

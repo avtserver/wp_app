@@ -1,4 +1,6 @@
+from __future__ import unicode_literals
 from . import __version__ as app_version
+from wp_app.route import routes
 
 app_name = "wp_app"
 app_title = "WinnersPie App"
@@ -47,6 +49,10 @@ app_license = "MIT"
 #	"Role": "home_page"
 # }
 
+# website_route_rules = [
+#     {'from_route':'/hbeauty/detail/<docname>', 'to_route':'hbeauty/detail'},
+#     # {'from_route':'/property/detail/<docname>', 'to_route':'property/detail'},
+# ]
 # Generators
 # ----------
 

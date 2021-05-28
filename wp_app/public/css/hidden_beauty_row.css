@@ -1,0 +1,119 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap');*/
+/*:root {*/
+/*    --background: #fffffb;*/
+/*    --accent: #ff6b6c;*/
+/*    --otherAccent: #ffc145;*/
+/*    --darkBackground: #5b5f97;*/
+/*}*/
+.website-list .result{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.event-card-head{
+    max-height: 120px;
+    overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#book {
+    height: 450px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    /*background: #fffffb;*/
+    background-image: linear-gradient(110deg, #ffffd9 0, #ffffd0 12.5%, #fafcc7 25%, #edf7be 37.5%, #def2b5 50%, #ceedad 62.5%, #bee8a7 75%, #ade4a3 87.5%, #9ce0a1 100%);
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top:15px;
+    margin-bottom:15px;
+    text-align:left;
+}
+/*.cards {*/
+/*   display: flex;*/
+/*   flex-wrap: wrap;*/
+/*   justify-content: space-between;*/
+/*}*/
+/* */
+/*.card {*/
+/*    flex: 0 1 24%;*/
+/*}*/
+h2 {
+    font-family: 'Sriracha', arial, sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #283913;
+}
+a:link {
+    text-decoration: none;
+}
+  button {
+    width: 70%;
+    height: 50px;
+    font-size: 2rem;
+    margin: 30px 10% 0 10%;
+    color: #000;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background: #DBECC6;
+    background-size: 300% 300%;
+    outline: none;
+    transition: all 200ms ease-in-out;
+  }
+
+button:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(2px);
+    -webkit-animation: gradientBG 1.5s ease-in-out forwards;
+    animation: gradientBG 1.5s ease-in-out forwards;
+    cursor: pointer;
+    background: #283913;
+    color:#fff;
+}
+#card-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #283913;
+          color: white;
+          width: 100%;
+          position: absolute;
+          bottom: 0px;
+          height: 30px;
+          padding: 10px 20px;
+          margin-left: -20px;
+          padding-bottom: 20px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+      }
+
+#page-list > div > main > div.d-flex.justify-content-between.align-items-center > div.page-header > h1{
+    display:none;
+}
+
+
+/*@-webkit-keyframes gradientBG {*/
+/*  0% {*/
+/*    background-position: 0% 50%;*/
+/*  }*/
+/*  100% {*/
+/*    background-position: 100% 50%;*/
+/*  }*/
+/*  // 100% {*/
+/*  //   background-position: 0% 50%;*/
+/*  // }*/
+/*}*/
+/*@keyframes gradientBG {*/
+/*  0% {*/
+/*    background-position: 0% 50%;*/
+/*  }*/
+/*  100% {*/
+/*    background-position: 100% 50%;*/
+/*  }*/
+/*  // 100% {*/
+/*  //   background-position: 0% 50%;*/
+/*  // }*/
+/*}*/
