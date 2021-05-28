@@ -49,10 +49,7 @@ app_license = "MIT"
 #	"Role": "home_page"
 # }
 
-# website_route_rules = [
-#     {'from_route':'/hbeauty/detail/<docname>', 'to_route':'hbeauty/detail'},
-#     # {'from_route':'/property/detail/<docname>', 'to_route':'property/detail'},
-# ]
+website_route_rules = routes
 # Generators
 # ----------
 

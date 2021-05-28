@@ -14,5 +14,5 @@ import frappe
 def get_context(context):
     # context = hbdetail
     # frappe.get_all(HBeauty, name, first_name, last_name)
-    context.hbdetail = frappe.get_doc("HBeauty","000031")
+    context.hbdetail = frappe.get_doc("HBeauty","000032")
     return context
