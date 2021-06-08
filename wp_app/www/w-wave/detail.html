@@ -1,0 +1,334 @@
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">-->
+
+
+<section class="hero">
+    <div class="rows">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9 text-center">
+                <h2>WELLNESS WAVE</h2>
+                <p>KINDLY FILL IN THE FORM FOR SELECTION OF CUSTOMIZED PRODUCTS SUITS YOU PERFECTLY!</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="info-container">
+    <div class="first-sec">
+
+        <div class="img-sec">
+            <img src="/files/wellness wave.jpg">
+        </div>
+
+    </div>
+    <div class="second-sec">
+
+        <div class="blog-post_info">
+
+
+            <div class="blog-post_date">
+                <span><b>ID</b> {{ wwave.name }}</span>
+                <span><b>Creation Date</b> {{ wwave.creation.strftime('%d-%m-%Y') }}</span>
+            </div>
+            <h1 class="blog-post_title">{{ wwave.first_name }} {{ wwave.last_name }}</h1>
+
+            <div class="blog-post_date">
+                <span> Email ID : {{ wwave.email_id }}</span>
+                <span> Mobile Number : {{ wwave.mobile_number }}</span>
+                <span> Age Group : {{ wwave.age_group }}</span>
+            </div>
+            <a href="#" class="blog-post_cta">
+                Get Recommendation
+            </a>
+        </div>
+    </div>
+    <div class="third-sec">
+
+        <div class="blog-post_date">
+        <img src="/files/date and time icon.png" width="74px" height="60px">
+
+            <span>Appointment Details  <br>{{ frappe.format(wwave.pick_a_date, {'fieldtype': 'Datetime'}) }}</span>
+           
+        </div></div>
+</div>
+
+
+<div class="skin-care">
+    <h2>HEALTH & WELLNESS </h2>
+
+    <div class="q-a-section" id="1"><div class="q-col"><p>DO YOU HAVE AN INTAKE OF A PROPERLY BALANCED DIET?
+    </p></div><div class="a-col"><p>{{ wwave.do_you_have_an_intake_of_a_properly_balanced_diet }}
+    </p></div></div>
+
+    <div class="q-a-section" id="2"><div class="q-col"><p>DO YOU DO ONE OF THESE EVERY DAY...
+    </p></div><div class="a-col"><p>{{ wwave.do_you_do_one_of_these_every_day }}
+    </p></div></div>
+    <div class="q-a-section" id="3"><div class="q-col"><p>HOW OFTEN DO YOU GO FOR A HEALTH CHECK-UP?
+    </p></div><div class="a-col"><p>{{ wwave.health_check_up }}
+    </p></div></div>
+    <div class="q-a-section" id="4"><div class="q-col"><p>ARE YOU TIRED OF....</p></div><div class="a-col">
+        <p>{% if wwave.mood_swings==1 %}Mood Swings<br>{% else %}{% endif %}
+            {% if wwave.frequent_headache==1 %}Frequent Headache<br>{% else %}{% endif %}
+            {% if wwave.lack_of_concentration==1 %}Lack of Concentration<br>{% else %}{% endif %}
+            {% if wwave.rough_skin==1 %}Rough Skin<br>{% else %}{% endif %}
+            {% if wwave.dandruff==1 %}Dandruff<br>{% else %}{% endif %}
+            {% if wwave.depression==1 %}Depression<br>{% else %}{% endif %}
+            {% if wwave.none_of_the_above==1 %}None of the above<br>{% else %}{% endif %}
+        </p></div></div>
+    <div class="q-a-section" id="5"><div class="q-col"><p>DO YOU FACE..</p></div><div class="a-col">
+        <p>{% if wwave.hair_fall==1 %}Hair fall<br>{% else %}{% endif %}
+            {% if wwave.flaky_skins==1 %}Flaky Skins<br>{% else %}{% endif %}
+            {% if wwave.weak_nails==1 %}Weak Nails<br>{% else %}{% endif %}
+            {% if wwave.weak_immune_system==1 %}Weak immune system<br>{% else %}{% endif %}
+            {% if wwave.loss_of_energy==1 %}Loss of energy<br>{% else %}{% endif %}
+            {% if wwave.quick_allergies==1 %}Quick Allergies<br>{% else %}{% endif %}
+            {% if wwave.cravings_hunger_pangs==1 %}Cravings, Hunger Pangs<br>{% else %}{% endif %}
+            {% if wwave.bigger_appetite_or_calorie_intake==1 %}Bigger Appetite or calorie intake<br>{% else %}{% endif %}
+            {% if wwave.none_of_the_above2==1 %}None of the above<br>{% else %}{% endif %}
+        </p></div></div>
+    <div class="q-a-section" id="6"><div class="q-col"><p>DO YOU ...</p></div><div class="a-col">
+        <p>{% if wwave.tend_to_add_snacks_and_processed_food_in_between_meals==1 %}Tend to add snacks and processed food in between meals<br>{% else %}{% endif %}
+            {% if wwave.often_feel_like_you_need_an_energy_booster==1 %}Often feel like you need an energy booster<br>{% else %}{% endif %}
+            {% if wwave.get_exposed_to_sun_for_prolonged_time==1 %}Get exposed to Sun for prolonged time<br>{% else %}{% endif %}
+            {% if wwave.live_in_a_city_with_pollution==1 %}Live in a city with pollution<br>{% else %}{% endif %}
+            {% if wwave.tend_to_skip_meals_frequently==1 %}Tend to skip meals frequently<br>{% else %}{% endif %}
+            {% if wwave.none_of_the_above3==1 %}None of the above<br>{% else %}{% endif %}
+
+        </p></div></div>
+    <div class="q-a-section" id="7"><div class="q-col"><p>DO YOU FACE ANY / ALL OF IT?</p></div><div class="a-col">
+        <p>{% if wwave.low_immunity==1 %}Low immunity<br>{% else %}{% endif %}
+            {% if wwave.inflammation==1 %}Inflammation<br>{% else %}{% endif %}
+            {% if wwave.wrinkles_and_dark_spots==1 %}Wrinkles and dark spots<br>{% else %}{% endif %}
+            {% if wwave.improper_fatigue==1 %}Improper Fatigue<br>{% else %}{% endif %}
+            {% if wwave.none_of_the_above4==1 %}None of the above<br>{% else %}{% endif %}
+
+
+        </p></div></div>
+
+    <div class="q-a-section" id="8"><div class="q-col"><p>ARE YOU CURRENTLY USING ANY FOOD SUPPLEMENT?
+    </p></div><div class="a-col"><p>{{ wwave.are_you_currently_using_any_food_supplement }}
+    </p></div></div>
+
+    <div class="q-a-section" id="9"><div class="q-col"><p>WHAT IS THE PURPOSE OF USING FOOD SUPPLEMENT?</p></div><div class="a-col">
+        <p>{% if wwave.muscle_building_protein_intake==1 %}Muscle Building (Protein Intake)<br>{% else %}{% endif %}
+            {% if wwave.staying_fit==1 %}Staying Fit<br>{% else %}{% endif %}
+            {% if wwave.for_having_a_healthy_and_complete_diet_nutrition==1 %}For having a healthy and complete diet (Nutrition)<br>{% else %}{% endif %}
+            {% if wwave.for_immunity_of_the_body==1 %}For Immunity of the body<br>{% else %}{% endif %}
+            {% if wwave.for_having_an_antioxidant==1 %}For having an Antioxidant<br>{% else %}{% endif %}
+            {% if wwave.none_of_them==1 %}None of them<br>{% else %}{% endif %}
+
+
+
+        </p></div></div>
+
+    <div class="q-a-section" id="10"><div class="q-col"><p>ARE YOU USING ANY HEALTH PRODUCTS (CAPSULES/ POWDER) FOR ANY SPECIFIC REASONS?
+    </p></div><div class="a-col"><p>{{ wwave.capsules_powder_for_any_specific_reasons }}
+    </p></div></div>
+
+    <div class="q-a-section" id="11"><div class="q-col"><p>WHAT'S THE BUDGET FOR YOUR HEALTH & WELLNESS?
+    </p></div><div class="a-col"><p>{{ wwave.budget_health_wellness }}
+    </p></div></div>
+
+
+</div>
+
+
+<script>
+
+    var aa =  '{{ wwave.do_you_have_an_intake_of_a_properly_balanced_diet }}';
+    var ab =  '{{ wwave.do_you_do_one_of_these_every_day }}';
+    var ac =  '{{ wwave.health_check_up }}';
+    var ba =  '{{ wwave.mood_swings }}';
+    var bb =  '{{ wwave.frequent_headache }}';
+    var bc =  '{{ wwave.lack_of_concentration }}';
+    var bd =  '{{ wwave.rough_skin }}';
+    var be =  '{{ wwave.dandruff }}';
+    var bf =  '{{ wwave.depression }}';
+    var bg =  '{{ wwave.none_of_the_above }}';
+    var ca =  '{{ wwave.hair_fall }}';
+    var cb =  '{{ wwave.flaky_skins }}';
+    var cc =  '{{ wwave.weak_nails }}';
+    var cd =  '{{ wwave.weak_immune_system }}';
+    var ce =  '{{ wwave.loss_of_energy }}';
+    var cf =  '{{ wwave.quick_allergies }}';
+    var cg =  '{{ wwave.cravings_hunger_pangs }}';
+    var ch =  '{{ wwave.bigger_appetite_or_calorie_intake }}';
+    var ci =  '{{ wwave.none_of_the_above2 }}';
+    var da =  '{{ wwave.tend_to_add_snacks_and_processed_food_in_between_meals }}';
+    var db =  '{{ wwave.often_feel_like_you_need_an_energy_booster }}';
+    var dc =  '{{ wwave.get_exposed_to_sun_for_prolonged_time }}';
+    var dd =  '{{ wwave.live_in_a_city_with_pollution }}';
+    var de =  '{{ wwave.tend_to_skip_meals_frequently }}';
+    var df =  '{{ wwave.none_of_the_above3 }}';
+    var ea =  '{{ wwave.low_immunity }}';
+    var eb =  '{{ wwave.inflammation }}';
+    var ec =  '{{ wwave.wrinkles_and_dark_spots }}';
+    var ed =  '{{ wwave.improper_fatigue }}';
+    var ee =  '{{ wwave.none_of_the_above4 }}';
+    var fa =  '{{ wwave.are_you_currently_using_any_food_supplement }}';
+    var ga =  '{{ wwave.muscle_building_protein_intake }}';
+    var gb =  '{{ wwave.staying_fit }}';
+    var gc =  '{{ wwave.for_having_a_healthy_and_complete_diet_nutrition }}';
+    var gd =  '{{ wwave.for_immunity_of_the_body }}';
+    var ge =  '{{ wwave.for_having_an_antioxidant }}';
+    var gf =  '{{ wwave.none_of_them }}';
+    var ha =  '{{ wwave.capsules_powder_for_any_specific_reasons }}';
+    var ia =  '{{ wwave.budget_health_wellness }}';
+
+
+
+    if(aa==""){
+        document.getElementById("1").style.display = "none";
+    }
+    else{
+        document.getElementById("1").style.display = "flex";
+    }
+    if(ab==""){
+        document.getElementById("2").style.display = "none";
+    }
+    else{
+        document.getElementById("2").style.display = "flex";
+    }
+    if(ac==""){
+        document.getElementById("3").style.display = "none";
+    }
+    else{
+        document.getElementById("3").style.display = "flex";
+    }
+    if (ba==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(bb==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(bc==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(bd==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(be==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(bf==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(bg==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else{
+        document.getElementById("4").style.display = "none";
+    }
+
+    if (ca==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(cb==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(cc==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(cd==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(ce==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(cf==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(cg==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(ch==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(ci==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else{
+        document.getElementById("5").style.display = "none";
+    }
+
+    if (da==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(db==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(dc==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(dd==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(de==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(df==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else{
+        document.getElementById("6").style.display = "none";
+    }
+    if (ea==1){
+        document.getElementById("7").style.display = "flex";
+    }
+    else if(eb==1){
+        document.getElementById("7").style.display = "flex";
+    }
+    else if(ec==1){
+        document.getElementById("7").style.display = "flex";
+    }
+    else if(ed==1){
+        document.getElementById("7").style.display = "flex";
+    }
+    else if(ee==1){
+        document.getElementById("7").style.display = "flex";
+    }
+    else{
+        document.getElementById("7").style.display = "none";
+    }
+    if(fa==""){
+        document.getElementById("8").style.display = "none";
+    }
+    else{
+        document.getElementById("8").style.display = "flex";
+    }
+    if (ga==1){
+        document.getElementById("9").style.display = "flex";
+    }
+    else if(gb==1){
+        document.getElementById("9").style.display = "flex";
+    }
+    else if(gc==1){
+        document.getElementById("9").style.display = "flex";
+    }
+    else if(gd==1){
+        document.getElementById("9").style.display = "flex";
+    }
+    else if(ge==1){
+        document.getElementById("9").style.display = "flex";
+    }
+    else if(gf==1){
+        document.getElementById("9").style.display = "flex";
+    }
+    else{
+        document.getElementById("9").style.display = "none";
+    }
+    if(ha==""){
+        document.getElementById("10").style.display = "none";
+    }
+    else{
+        document.getElementById("10").style.display = "flex";
+    }
+    if(ia==""){
+        document.getElementById("11").style.display = "none";
+    }
+    else{
+        document.getElementById("11").style.display = "flex";
+    }
+
+</script>

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
- "autoname": "format:{######}",
+ "autoname": "format:{#####}",
  "creation": "2021-05-27 14:01:40.337753",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -26,8 +26,6 @@
   "assistance_from_us_section",
   "assistance_from_us",
   "pick_a_date",
-  "route",
-  "published",
   "color_cosmetics_section",
   "color_cosmetics",
   "why_do_you_love_makeup",
@@ -61,6 +59,11 @@
   "lip_liner",
   "lip_gloss",
   "lipstick",
+  "which_type_of_lipstick_do_you_prefer",
+  "matte_lipstick",
+  "gloss_lipstick",
+  "creamy_lipstick",
+  "longstay_lipstick",
   "what_all_things_do_you_use_for_your_nailmakeup",
   "matte_nail_polish",
   "shiny_metallic_nail_polish",
@@ -68,12 +71,6 @@
   "base_coat",
   "nail_file",
   "whats_your_monthly_budget_for_you_color_cosmetics",
-  "lipstick_section",
-  "which_type_of_lipstick_do_you_prefer",
-  "matte_lipstick",
-  "gloss_lipstick",
-  "creamy_lipstick",
-  "longstay_lipstick",
   "skin_care_section",
   "skin_care_heading",
   "what_is_your_skin_type",
@@ -147,7 +144,9 @@
   "for_having_an_antioxidant",
   "specific_reasons",
   "do_you_have_an_intake_of_proper_balanced_diet",
-  "whats_the_budget_for_your_health_wellness"
+  "whats_the_budget_for_your_health_wellness",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -222,19 +221,6 @@
    "fieldtype": "Datetime",
    "in_list_view": 1,
    "label": "Pick a Date & Time"
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Route"
-  },
-  {
-   "default": "1",
-   "fieldname": "published",
-   "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Published"
   },
   {
    "fieldname": "color_cosmetics",
@@ -397,7 +383,7 @@
    "fieldname": "when_do_you_prefer_applying_foundation",
    "fieldtype": "Select",
    "label": "WHEN DO YOU PREFER APPLYING FOUNDATION?",
-   "options": "Everyday while going out of house\nOccasionally\nMarriage & Parties\nOnly at night time party or functions"
+   "options": "\nEveryday while going out of house\nOccasionally\nMarriage & Parties\nOnly at night time party or functions"
   },
   {
    "fieldname": "what_all_things_do_you_use_for_your_eyemakeup",
@@ -477,12 +463,6 @@
    "label": "Lipstick"
   },
   {
-   "depends_on": "lipstick",
-   "fieldname": "lipstick_section",
-   "fieldtype": "Section Break",
-   "label": "Lipstick"
-  },
-  {
    "fieldname": "which_type_of_lipstick_do_you_prefer",
    "fieldtype": "HTML",
    "label": "WHICH TYPE OF LIPSTICK DO YOU PREFER?",
@@ -552,7 +532,7 @@
    "fieldname": "whats_your_monthly_budget_for_you_color_cosmetics",
    "fieldtype": "Select",
    "label": "WHAT'S YOUR MONTHLY BUDGET FOR YOU COLOR COSMETICS?",
-   "options": "Up to 500/-\n500/- to 1000/-\n1000/- to 3000/-\n3000+"
+   "options": "\nUp to 500/-\n500/- to 1000/-\n1000/- to 3000/-\n3000+"
   },
   {
    "collapsible": 1,
@@ -571,7 +551,7 @@
    "fieldname": "what_is_your_skin_type",
    "fieldtype": "Select",
    "label": "WHAT IS YOUR SKIN TYPE?",
-   "options": "Oily\nCombination\nNormal\nDry\nSensitive\nNot sure"
+   "options": "\nOily\nCombination\nNormal\nDry\nSensitive\nNot sure"
   },
   {
    "fieldname": "what_do_you_use_to_clean_your_face",
@@ -746,7 +726,7 @@
    "fieldname": "whats_your_hair_type",
    "fieldtype": "Select",
    "label": "WHAT'S YOUR HAIR TYPE?",
-   "options": "Oily\nSticky\nNormal\nDry"
+   "options": "\nOily\nSticky\nNormal\nDry"
   },
   {
    "fieldname": "what_are_the_products_you_prefer_using_for_your_haircare",
@@ -818,7 +798,7 @@
    "fieldname": "whats_your_monthly_budget_for_you_hair_care",
    "fieldtype": "Select",
    "label": "WHAT'S YOUR MONTHLY BUDGET FOR YOU HAIR CARE?",
-   "options": "Up to 500/-\n500/- to 1000/-\nAbove 1000/-"
+   "options": "\nUp to 500/-\n500/- to 1000/-\nAbove 1000/-"
   },
   {
    "collapsible": 1,
@@ -1001,13 +981,23 @@
    "fieldtype": "Select",
    "label": "WHAT'S THE BUDGET FOR YOUR HEALTH & WELLNESS?",
    "options": "500/- to 1000/-\n1000/- to 2000/-\n2000/- to 5000/-\n5000+"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "fieldname": "published",
+   "fieldtype": "Data",
+   "label": "published"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2021-05-28 16:34:03.271256",
+ "modified": "2021-06-07 17:57:46.714736",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "HBeauty",
@@ -1038,7 +1028,7 @@
    "write": 1
   }
  ],
- "route": "hidden-beauty",
+ "route": "nbeauty",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

@@ -1,0 +1,460 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "format:{#####}",
+ "creation": "2021-06-02 19:19:31.729945",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_section",
+  "first_name",
+  "last_name",
+  "age_group",
+  "column_break_5",
+  "mobile_number",
+  "email_id",
+  "referred_by",
+  "health_wellness_sec",
+  "health_and_wellness",
+  "do_you_have_an_intake_of_a_properly_balanced_diet",
+  "do_you_do_one_of_these_every_day",
+  "health_check_up",
+  "are_you_tired_of",
+  "mood_swings",
+  "frequent_headache",
+  "lack_of_concentration",
+  "rough_skin",
+  "dandruff",
+  "depression",
+  "none_of_the_above",
+  "do_you_face",
+  "hair_fall",
+  "flaky_skins",
+  "weak_nails",
+  "weak_immune_system",
+  "loss_of_energy",
+  "quick_allergies",
+  "cravings_hunger_pangs",
+  "bigger_appetite_or_calorie_intake",
+  "none_of_the_above2",
+  "do_you",
+  "tend_to_add_snacks_and_processed_food_in_between_meals",
+  "often_feel_like_you_need_an_energy_booster",
+  "get_exposed_to_sun_for_prolonged_time",
+  "live_in_a_city_with_pollution",
+  "tend_to_skip_meals_frequently",
+  "none_of_the_above3",
+  "do_you_face_any__all_of_it",
+  "low_immunity",
+  "inflammation",
+  "wrinkles_and_dark_spots",
+  "improper_fatigue",
+  "none_of_the_above4",
+  "are_you_currently_using_any_food_supplement",
+  "what_is_the_purpose_of_using_food_supplement",
+  "muscle_building_protein_intake",
+  "staying_fit",
+  "for_having_a_healthy_and_complete_diet_nutrition",
+  "for_immunity_of_the_body",
+  "for_having_an_antioxidant",
+  "none_of_them",
+  "capsules_powder_for_any_specific_reasons",
+  "budget_health_wellness",
+  "assistance_from_us_section",
+  "assistance_from_us",
+  "pick_a_date",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_section",
+   "fieldtype": "Section Break",
+   "label": "PROFILE INFO"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Select",
+   "label": "Age Group",
+   "options": "15-20\n20-30\n30-40\n40-50\n50+"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "length": 10,
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "options": "Email"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Referred by",
+   "length": 8
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "health_wellness_sec",
+   "fieldtype": "Section Break",
+   "label": "HEALTH CARE & WELLNESS"
+  },
+  {
+   "fieldname": "health_and_wellness",
+   "fieldtype": "HTML",
+   "label": "Health and Wellness",
+   "options": "<h2><b>Health &amp; Wellness</b></h2>\nBeing healthy inside out is a much needed concern in today's time! So you made a great choice by choosing your Health &amp; Well being. So please fill in the form so we can understand your concern and get the perfect solutions for you Exclusively!<br><br>"
+  },
+  {
+   "description": "(ICMR SUGGEST TO EAT 1000G OF FRUITS AND VEGETABLES EVERY DAY, AS 90% OF INDIANS HAVE A DEFICIENCY) ",
+   "fieldname": "do_you_have_an_intake_of_a_properly_balanced_diet",
+   "fieldtype": "Select",
+   "label": "DO YOU HAVE AN INTAKE OF A PROPERLY BALANCED DIET?",
+   "options": "Yes\nNo\nAt sometimes"
+  },
+  {
+   "fieldname": "do_you_do_one_of_these_every_day",
+   "fieldtype": "Select",
+   "label": "DO YOU DO ONE OF THESE EVERY DAY...",
+   "options": "Exercise for 30 minutes at least\nBrisk walk at least for 3 kilometers\nBoth of them\nNone of them"
+  },
+  {
+   "description": "(IT IS RECOMMENDED TO GO FOR REGULAR HEALTH CHECKUP ONCE A YEAR IF YOU ARE 45+ AND ONCE IN 3 YEARS IF YOU ARE LESS THAN 45)",
+   "fieldname": "health_check_up",
+   "fieldtype": "Select",
+   "label": "HOW OFTEN DO YOU GO FOR A HEALTH CHECK-UP?",
+   "options": "Half yearly\nYearly\nNot regularly\nWhenever I face some problems"
+  },
+  {
+   "description": "(YOU CAN CHOOSE MORE THAN ONE OPTIONS)",
+   "fieldname": "are_you_tired_of",
+   "fieldtype": "HTML",
+   "label": "ARE YOU TIRED OF....",
+   "options": "ARE YOU TIRED OF....<br>(You can choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "mood_swings",
+   "fieldtype": "Check",
+   "label": "Mood Swings"
+  },
+  {
+   "default": "0",
+   "fieldname": "frequent_headache",
+   "fieldtype": "Check",
+   "label": "Frequent Headache"
+  },
+  {
+   "default": "0",
+   "fieldname": "lack_of_concentration",
+   "fieldtype": "Check",
+   "label": "Lack of Concentration"
+  },
+  {
+   "default": "0",
+   "fieldname": "rough_skin",
+   "fieldtype": "Check",
+   "label": "Rough Skin"
+  },
+  {
+   "default": "0",
+   "fieldname": "dandruff",
+   "fieldtype": "Check",
+   "label": "Dandruff"
+  },
+  {
+   "default": "0",
+   "fieldname": "depression",
+   "fieldtype": "Check",
+   "label": "Depression"
+  },
+  {
+   "default": "0",
+   "fieldname": "none_of_the_above",
+   "fieldtype": "Check",
+   "label": "None of the above"
+  },
+  {
+   "fieldname": "do_you_face",
+   "fieldtype": "HTML",
+   "label": "DO YOU FACE...",
+   "options": "DO YOU FACE...<br>(You may choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "hair_fall",
+   "fieldtype": "Check",
+   "label": "Hair fall"
+  },
+  {
+   "default": "0",
+   "fieldname": "flaky_skins",
+   "fieldtype": "Check",
+   "label": "Flaky Skins"
+  },
+  {
+   "default": "0",
+   "fieldname": "weak_nails",
+   "fieldtype": "Check",
+   "label": "Weak Nails"
+  },
+  {
+   "default": "0",
+   "fieldname": "weak_immune_system",
+   "fieldtype": "Check",
+   "label": "Weak immune system"
+  },
+  {
+   "default": "0",
+   "fieldname": "loss_of_energy",
+   "fieldtype": "Check",
+   "label": "Loss of energy"
+  },
+  {
+   "default": "0",
+   "fieldname": "quick_allergies",
+   "fieldtype": "Check",
+   "label": "Quick Allergies"
+  },
+  {
+   "default": "0",
+   "fieldname": "cravings_hunger_pangs",
+   "fieldtype": "Check",
+   "label": "Cravings, Hunger Pangs"
+  },
+  {
+   "default": "0",
+   "fieldname": "bigger_appetite_or_calorie_intake",
+   "fieldtype": "Check",
+   "label": "Bigger Appetite or calorie intake"
+  },
+  {
+   "default": "0",
+   "fieldname": "none_of_the_above2",
+   "fieldtype": "Check",
+   "label": "None of the above"
+  },
+  {
+   "fieldname": "do_you",
+   "fieldtype": "HTML",
+   "label": "DO YOU...",
+   "options": "DO YOU...<br>(You may choose more than one options)<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "tend_to_add_snacks_and_processed_food_in_between_meals",
+   "fieldtype": "Check",
+   "label": "Tend to add snacks and processed food in between meals"
+  },
+  {
+   "default": "0",
+   "fieldname": "often_feel_like_you_need_an_energy_booster",
+   "fieldtype": "Check",
+   "label": "Often feel like you need an energy booster"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_exposed_to_sun_for_prolonged_time",
+   "fieldtype": "Check",
+   "label": "Get exposed to Sun for prolonged time"
+  },
+  {
+   "default": "0",
+   "fieldname": "live_in_a_city_with_pollution",
+   "fieldtype": "Check",
+   "label": "Live in a city with pollution"
+  },
+  {
+   "default": "0",
+   "fieldname": "tend_to_skip_meals_frequently",
+   "fieldtype": "Check",
+   "label": "Tend to skip meals frequently"
+  },
+  {
+   "default": "0",
+   "fieldname": "none_of_the_above3",
+   "fieldtype": "Check",
+   "label": "None of the above"
+  },
+  {
+   "fieldname": "do_you_face_any__all_of_it",
+   "fieldtype": "HTML",
+   "label": "DO YOU FACE ANY / ALL OF IT?",
+   "options": "DO YOU FACE ANY / ALL OF IT?<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "low_immunity",
+   "fieldtype": "Check",
+   "label": "Low immunity"
+  },
+  {
+   "default": "0",
+   "fieldname": "inflammation",
+   "fieldtype": "Check",
+   "label": "Inflammation"
+  },
+  {
+   "default": "0",
+   "fieldname": "wrinkles_and_dark_spots",
+   "fieldtype": "Check",
+   "label": "Wrinkles and dark spots"
+  },
+  {
+   "default": "0",
+   "fieldname": "improper_fatigue",
+   "fieldtype": "Check",
+   "label": "Improper Fatigue"
+  },
+  {
+   "default": "0",
+   "fieldname": "none_of_the_above4",
+   "fieldtype": "Check",
+   "label": "None of the above"
+  },
+  {
+   "fieldname": "are_you_currently_using_any_food_supplement",
+   "fieldtype": "Select",
+   "label": "ARE YOU CURRENTLY USING ANY FOOD SUPPLEMENT?",
+   "options": "Yes\nNo\nThinking of using"
+  },
+  {
+   "fieldname": "what_is_the_purpose_of_using_food_supplement",
+   "fieldtype": "HTML",
+   "label": "WHAT IS THE PURPOSE OF USING FOOD SUPPLEMENT?",
+   "options": "WHAT IS THE PURPOSE OF USING FOOD SUPPLEMENT?<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "muscle_building_protein_intake",
+   "fieldtype": "Check",
+   "label": "Muscle Building (Protein Intake)"
+  },
+  {
+   "default": "0",
+   "fieldname": "staying_fit",
+   "fieldtype": "Check",
+   "label": "Staying Fit"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_having_a_healthy_and_complete_diet_nutrition",
+   "fieldtype": "Check",
+   "label": "For having a healthy and complete diet (Nutrition)"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_immunity_of_the_body",
+   "fieldtype": "Check",
+   "label": "For Immunity of the body"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_having_an_antioxidant",
+   "fieldtype": "Check",
+   "label": "For having an Antioxidant"
+  },
+  {
+   "default": "0",
+   "fieldname": "none_of_them",
+   "fieldtype": "Check",
+   "label": "None of them"
+  },
+  {
+   "fieldname": "capsules_powder_for_any_specific_reasons",
+   "fieldtype": "Select",
+   "label": "ARE YOU USING ANY HEALTH PRODUCTS (CAPSULES/ POWDER) FOR ANY SPECIFIC REASONS?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "budget_health_wellness",
+   "fieldtype": "Select",
+   "label": "WHAT'S THE BUDGET FOR YOUR HEALTH & WELLNESS?",
+   "options": "500/- to 1000/-\n1000/- to 2000/-\n2000/- to 5000/-\n5000+"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "assistance_from_us_section",
+   "fieldtype": "Section Break",
+   "label": "MAKE AN APPOINTMENT"
+  },
+  {
+   "fieldname": "assistance_from_us",
+   "fieldtype": "HTML",
+   "label": "Assistance from us",
+   "options": "<h2><b>ASSISTANCE FROM US</b></h2>Which time will be suitable for you for communicating with our support for your customized products over a phone call?<br><br>"
+  },
+  {
+   "fieldname": "pick_a_date",
+   "fieldtype": "Datetime",
+   "label": "Pick a Date & Time"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-06-05 13:06:36.356834",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "WWave",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

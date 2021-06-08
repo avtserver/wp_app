@@ -1,0 +1,106 @@
+<!--<link rel="stylesheet" href="/assets/wp_app/css/hidden_beauty_row.css">-->
+{% extends "templates/web.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<!--    <link rel="stylesheet" href="/assets/wp_app/css/card.css">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<div class="hero1">
+  <div class="overlay1"></div>
+  <div class="content1">
+    <h1>Wellness Wave List</h1>
+<!--    <p>This shit looks great, huh?-->
+  </div>
+</div>
+<!--{% for wwave in wwsurvey %}-->
+
+<!--<div class="card-container">-->
+
+
+<!--<div class="card">-->
+<!--    <div class="content">-->
+<!--        <div class="front">-->
+<!--            <h3>Name</h3>-->
+<!--            Ref number-->
+
+<!--        </div>-->
+<!--        <div class="back">-->
+<!--            <h6>Email ID</h6>-->
+<!--            <h6> Mobile</h6>-->
+<!--            <h6> Age Group</h6>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--{% endfor %}-->
+
+
+
+
+            <div class="site-section site-section-sm bg-light ">
+                <div class="container">
+
+                    <div class="row mb-5">
+
+                        {% for wwave in wwsurvey %}
+
+                        <div class="col-md-6 col-lg-4 mb-4 ">
+                            <div id="book">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="front">
+                                            <div id="card-footer">
+                                               <b>ID :</b> {{wwave.name}}
+
+
+                                                <p><b>Request Date :</b> {{ wwave.creation.strftime('%d-%m-%Y') }}</p>
+
+                                            </div>
+                                <h2 class="card-header">
+                                    {{wwave.first_name}} {{wwave.last_name}}
+                                </h2>
+                                <div class="text">
+                                    <p><b>Referral code  </b><br>
+                                        {{wwave.referred_by}}
+
+
+                                    <p><b>Appointment Details </b> <br>{{ frappe.format(wwave.pick_a_date, {'fieldtype': 'Datetime'}) }}</p>
+
+
+
+
+                                </div>
+                                </div>
+                                        <div class="back">
+
+                                            <div class="text">
+
+                                                <p><b>Email ID </b><br>
+                                                    {{wwave.email_id}}</p>
+                                                <p><b>Mobile Number </b><br>
+                                                    {{wwave.mobile_number}}</p>
+                                                <p><b>Age Group </b><br>
+                                                    {{wwave.age_group}}</p>
+                                                <a href="/w-wave/detail/{{wwave.name}}" class="hero-btn" type="button">Show more</a>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+
+                </div>
+            </div>
+            {% endblock %}

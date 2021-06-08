@@ -1,29 +1,775 @@
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">-->
 
-<!--<h2>Name : {{hbdetail.first_name}} {{hbdetail.last_name}}</h2>-->
-<!--<h2>Series : {{hbdetail.name}} </h2>-->
-<!--<p>Referred By : {{hbdetail.referred_by}}</p>-->
-<!--<p>Email ID : {{hbdetail.email_id}}</p>-->
-<!--<p>Mobile Number : {{hbdetail.mobile_number}}</p>-->
-<!--<p>Age Group : {{hbdetail.age_group}}</p>-->
 
-<link rel="stylesheet" href="/assets/wp_app/css/hidden_beauty_row.css">
-<div id="book">
-
-    <h2 card-header>
-        {{hbdetail.first_name}} {{hbdetail.last_name}}
-    </h2>
-    <div class="text">
-        <p><b>Referral code  </b><br>
-            {{hbdetail.referred_by}}
-        <p><b>Email ID </b><br>
-            {{hbdetail.email_id}}</p>
-        <p><b>Mobile Number </b><br>
-            {{hbdetail.mobile_number}}</p>
-        <p><b>Age Group </b><br>
-            {{hbdetail.age_group}}</p>
-        <button type="button">Show Details</button>
-        <div id="card-footer">
-            {{hbdetail.name}}
+<section class="hero">
+    <div class="rows">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9 text-center">
+                <h2>DISCOVER YOUR HIDDEN BEAUTY WITH US</h2>
+                <p>KINDLY FILL IN THE FORM FOR SELECTION OF CUSTOMIZED PRODUCTS SUITS YOU PERFECTLY!</p>
+            </div>
         </div>
     </div>
+
+</section>
+
+<div class="info-container">
+    <div class="first-sec">
+
+        <div class="img-sec">
+            <img src="/files/Hidden Beauty Winnerspie.png">
+        </div>
+
+    </div>
+    <div class="second-sec">
+
+        <div class="blog-post_info">
+
+
+            <div class="blog-post_date">
+                <span><b>ID</b> {{ hbeauty.name }}</span>
+                <span><b>Creation Date</b> {{ hbeauty.creation.strftime('%d-%m-%Y') }}</span>
+            </div>
+            <h1 class="blog-post_title">{{ hbeauty.first_name }} {{ hbeauty.last_name }}</h1>
+<!--            <p class="blog-post_text">-->
+<!--                AGE GROUP : {{ hbeauty.age_group }}-->
+<!--            </p>-->
+            <div class="blog-post_date">
+            <span> Email ID : {{ hbeauty.email_id }}</span>
+            <span> Mobile Number : {{ hbeauty.mobile_number }}</span>
+            <span> Age Group : {{ hbeauty.age_group }}</span>
+            </div>
+            <a href="#" class="blog-post_cta">
+                Get Recommendation
+            </a>
+        </div>
+    </div>
+    <div class="third-sec">
+        <!--        <div class="box2">-->
+        <div class="blog-post_date">
+            <span>Appointment :{% if hbeauty.book_appointment==1 %} Made {% else %} No Appointment Made{% endif %}</span>
+            {% if hbeauty.book_appointment==1 %}
+
+        <span>Appointment Details  <br>{{ frappe.format(hbeauty.pick_a_date, {'fieldtype': 'Datetime'}) }}</span>
+        {% else %}
+        {% endif %}
+        </div></div>
 </div>
+
+
+<div class="a-c-container">
+    <div class="a-c-first-sec">
+
+        <h1 class="blog-post_title">AREA OF CONCERN</h1>
+
+    </div>
+    <div class="second-sec">
+
+        <div class="blog-post_date">
+
+            <ul>
+                {% if hbeauty.color_cosmetics_check==1 %}
+                <li>
+                    <h4><b>COLOR COSMETICS</b> (Make-up Products)</h4>
+                    {% else %}
+                    {% endif %}</li>
+                {% if hbeauty.skin_care==1 %}
+                <li>
+                    <h4><b>SKIN CARE</b></h4>
+                    {% else %}
+                    {% endif %}
+                </li>
+                {% if hbeauty.hair_care==1 %}
+                <li>
+                    <h4><b>HAIR CARE</b></h4>
+                    {% else %}
+                    {% endif %}
+                </li>
+                {% if hbeauty.personal_care==1 %}
+                <li>
+                    <h4><b>PERSONAL CARE</b></h4>
+                    {% else %}
+                    {% endif %}
+                </li>
+                {% if hbeauty.health_wellness==1 %}
+                <li>
+                    <h4><b>HEALTH &amp; WELLNESS</b></h4>
+                    {% else %}
+                    {% endif %}
+                </li>
+            </ul>
+
+        </div>
+        </div>
+</div>
+
+
+{% if hbeauty.color_cosmetics_check==1 %}
+<div class="color-cosmetics">
+    <h2>COLOR COSMETICS </h2><br>
+
+
+<div class="q-a-section" id="1">
+
+    <div class="q-col">
+    <p>REASON TO LOVE MAKEUP</p></div>
+        <div class="a-col">
+            <p>{% if hbeauty.boosts_confidence==1 %}Boosts confidence<br>{% else %}{% endif %}
+                {% if hbeauty.to_look_younger==1 %}To look younger<br>{% else %}{% endif %}
+                {% if hbeauty.enhance_beauty==1 %}Enhance beauty<br>{% else %}{% endif %}
+                {% if hbeauty.it_is_so_much_fun==1 %}It is so much fun<br>{% else %}{% endif %}
+                {% if hbeauty.clear_complexion==1 %}Clear complexion<br>{% else %}{% endif %}
+                {% if hbeauty.will_keep_your_skin_protected==1 %}Will keep your Skin Protected<br>{% else %}{% endif %}
+                {% if hbeauty.makeup_makes_you_look_perfect_in_photos==1 %}Makeup makes you look perfect in photos<br>{% else %}{% endif %}
+                {% if hbeauty.you_can_showcase_your_sense_of_selfcare==1 %}You can showcase your sense of self-care<br>{% else %}{% endif %}
+            </p>
+        </div>
+</div>
+
+<div class="q-a-section" id="2">
+    <div class="q-col"><p>ALL THINGS WHICH IS USED FOR FACE MAKE-UP</p></div><div class="a-col"><p>
+       
+
+    {% if hbeauty.foundation==1 %}Foundation<br>{% else %}{% endif %}
+    {% if hbeauty.concealer==1 %}Concealer<br>{% else %}{% endif %}
+    {% if hbeauty.compact==1 %}Compact<br>{% else %}{% endif %}
+    {% if hbeauty.cc_cream==1 %}CC cream<br>{% else %}{% endif %}
+    {% if hbeauty.blusher==1 %}Blusher<br>{% else %}{% endif %}
+    {% if hbeauty.other==1 %}{{hbeauty.data_41}}<br>{% else %}{% endif %}
+    </p></div></div>
+
+
+
+<div class="q-a-section" id="3"><div class="q-col"><p>WHEN DO YOU PREFER APPLYING FOUNDATION?</p></div>
+    <div class="a-col"><p>{{hbeauty.when_do_you_prefer_applying_foundation}}</p></div></div>
+
+
+
+
+<div class="q-a-section" id="4"><div class="q-col"><p>WHAT ALL THINGS DO YOU USE FOR YOUR EYE-MAKEUP?</p></div><div class="a-col"><p>    {% if hbeauty.eye_liner==1 %}Eye Liner{% else %}{% endif %}
+
+    {% if hbeauty.mascara==1 %}Mascara<br>{% else %}{% endif %}
+    {% if hbeauty.eye_pencil==1 %}Eye Pencil<br>{% else %}{% endif %}
+    {% if hbeauty.eye_shadow==1 %}Eye shadow<br>{% else %}{% endif %}
+    {% if hbeauty.browcara==1 %}Browcara<br>{% else %}{% endif %}
+    {% if hbeauty.other2==1 %}{{hbeauty.data_50}}<br>{% else %}{% endif %}
+
+
+
+</p></div></div>
+
+
+<div class="q-a-section" id="5"><div class="q-col"><p>WHAT ALL THINGS DO YOU USE FOR YOUR LIP-MAKEUP?</p></div>
+    <div class="a-col"><p>
+
+        {% if hbeauty.lip_balm==1 %}Lip Balm<br>{% else %}{% endif %}
+        {% if hbeauty.lip_liner==1 %}Lip Liner<br>{% else %}{% endif %}
+        {% if hbeauty.lip_gloss==1 %}Lip Gloss<br>{% else %}{% endif %}
+        {% if hbeauty.lipstick==1 %}Lipstick<br>{% else %}{% endif %}
+
+    </p></div></div>
+
+<div class="q-a-section" id="6"><div class="q-col"><p>WHAT ALL THINGS DO YOU USE FOR YOUR NAIL-MAKEUP?</p></div>
+    <div class="a-col"><p>
+        {% if hbeauty.matte_nail_polish==1 %}Matte Nail Polish<br>{% else %}{% endif %}
+        {% if hbeauty.shiny_metallic_nail_polish==1 %}Shiny/ Metallic Nail Polish<br>{% else %}{% endif %}
+        {% if hbeauty.top_coat==1 %}Top Coat<br>{% else %}{% endif %}
+        {% if hbeauty.base_coat==1 %}Base Coat<br>{% else %}{% endif %}
+        {% if hbeauty.nail_file==1 %}Nail fIle<br>{% else %}{% endif %}
+
+    </p></div></div>
+
+<div class="q-a-section" id="7"><div class="q-col"><p>WHAT'S YOUR MONTHLY BUDGET FOR YOU COLOR COSMETICS?</p></div>
+    <div class="a-col"><p>{{hbeauty.whats_your_monthly_budget_for_you_color_cosmetics}}
+</p></div></div>
+
+
+
+{% else %}
+{% endif %}
+</div>
+
+{% if hbeauty.skin_care==1 %}
+<div class="skin-care">
+    <h2>SKIN CARE </h2>
+
+    <div class="q-a-section" id="8"><div class="q-col"><p>WHAT IS YOUR SKIN TYPE?</p></div><div class="a-col"><p>{{ hbeauty.what_is_your_skin_type }}</p></div></div>
+    <div class="q-a-section" id="9"><div class="q-col"><p>WHAT DO YOU USE TO CLEAN YOUR FACE?</p></div><div class="a-col"><p>{{ hbeauty.what_do_you_use_to_clean_your_face }}</p></div></div>
+    <div class="q-a-section" id="10"><div class="q-col"><p>DOES YOUR SKIN FEEL DRIED UP AND STRETCHED AFTER APPLYING SOAP?</p></div><div class="a-col"><p>{{ hbeauty.does_your_skin_feel_dried_up_and_stretched_after_applying_soap }}</p></div></div>
+    <div class="q-a-section" id="11"><div class="q-col"><p>DO YOU LOOK AFTER YOUR SKIN REGULARLY?</p></div><div class="a-col"><p>{{ hbeauty.do_you_look_after_your_skin_regularly }}</p></div></div>
+    <div class="q-a-section" id="12"><div class="q-col"><p>DOES YOUR PORES REMAIN OPEN?</p></div><div class="a-col"><p>{{ hbeauty.does_your_pores_remain_open }}</p></div></div>
+    <div class="q-a-section" id="13"><div class="q-col"><p>ARE YOU WORRIED ABOUT...</p></div><div class="a-col"><p>{% if hbeauty.skin_sagging==1 %}Skin Sagging<br>{% else %}{% endif %}
+    {% if hbeauty.lip_wrinkles==1 %}Lip Wrinkles<br>{% else %}{% endif %}
+    {% if hbeauty.lines_around_eyes==1 %}Lines around eyes<br>{% else %}{% endif %}
+    {% if hbeauty.glabellar_wrinkles==1 %}Glabellar Wrinkles<br>{% else %}{% endif %}
+    {% if hbeauty.spots_and_scars_on_face==1 %}Spots and scars on face<br>{% else %}{% endif %}
+    {% if hbeauty.puffiness==1 %}Puffiness<br>{% else %}{% endif %}
+    {% if hbeauty.uneven_skin_tone==1 %}Uneven Skin Tone<br>{% else %}{% endif %}
+    {% if hbeauty.dark_circles==1 %}Dark Circles<br>{% else %}{% endif %}
+    {% if hbeauty.pimples==1 %}Pimples<br>{% else %}{% endif %}
+    {% if hbeauty.sticky_skin==1 %}Sticky Skin<br>{% else %}{% endif %}
+    {% if hbeauty.blackheads==1 %}Blackheads<br>{% else %}{% endif %}
+    {% if hbeauty.wrinkles==1 %}Wrinkles<br>{% else %}{% endif %}
+    {% if hbeauty.roughness==1 %}Roughness<br>{% else %}{% endif %}
+    {% if hbeauty.under_eye_dark_circles==1 %}Under eye dark circles<br>{% else %}{% endif %}
+    {% if hbeauty.enlarged_pores==1 %}Enlarged Pores<br>{% else %}{% endif %}
+    {% if hbeauty.redness==1 %}Redness<br>{% else %}{% endif %}
+    {% if hbeauty.dullness==1 %}Dullness<br>{% else %}{% endif %}
+    {% if hbeauty.whiteheads==1 %}Whiteheads<br>{% else %}{% endif %}
+    {% if hbeauty.dehydrated_skin==1 %}Dehydrated Skin<br>{% else %}{% endif %}</p></div></div>
+
+    <div class="q-a-section" id="14"><div class="q-col"><p>HOW OFTEN DO YOU USE FACE SCRUB  & FACE MASK?</p></div><div class="a-col"><p>{{ hbeauty.how_often_do_you_use_face_scrub__face_mask }}</p></div></div>
+    <div class="q-a-section" id="15"><div class="q-col"><p>WHAT'S YOUR MONTHLY BUDGET FOR YOU SKIN CARE?</p></div><div class="a-col"><p>{{ hbeauty.whats_your_monthly_budget_for_you_skin_care }}</p></div></div>
+
+
+{% else %}
+{% endif %}
+</div>
+
+{% if hbeauty.hair_care==1 %}
+<div class="hair_care">
+<h2>HAIR CARE</h2>
+
+    <div class="q-a-section" id="16"><div class="q-col"><p>WHAT'S YOUR HAIR TYPE?</p></div><div class="a-col"><p>{{ hbeauty.whats_your_hair_type }}</p></div></div>
+    <div class="q-a-section" id="17"><div class="q-col"><p>WHAT ARE THE PRODUCTS YOU PREFER USING FOR YOUR HAIRCARE</p></div><div class="a-col"><p>{% if hbeauty.any_shampoo==1 %}Any Shampoo<br>{% else %}{% endif %}{% if hbeauty.specific_shampoo_for_your_hair_type==1 %}Specific Shampoo for your hair type<br>{% else %}{% endif %}{% if hbeauty.hair_conditioner==1 %}Hair Conditioner<br>{% else %}{% endif %}{% if hbeauty.hair_mask==1 %}Hair Mask<br>{% else %}{% endif %}{% if hbeauty.hair_oil==1 %}Hair Oil<br>{% else %}{% endif %}{% if hbeauty.hair_serum==1 %}Hair Serum<br>{% else %}{% endif %}{% if hbeauty.hair_treatment_any==1 %}Hair Treatment (Any)<br>{% else %}{% endif %}</p></div></div>
+    <div class="q-a-section" id="18"><div class="q-col"><p>HOW FREQUENTLY YOU SHAMPOO YOUR HAIR?</p></div><div class="a-col"><p>{{ hbeauty.how_frequently_you_shampoo_your_hair }}</p></div></div>
+    <div class="q-a-section" id="19"><div class="q-col"><p>DO YOU USE ANY PRODUCTS FOR YOUR HAIR STYLING?</p></div><div class="a-col"><p>{{ hbeauty.do_you_use_any_products_for_your_hair_styling }}</p></div></div>
+    <div class="q-a-section" id="20"><div class="q-col"><p>WHAT ARE YOU WORRIES ABOUT?</p></div><div class="a-col"><p>{{ hbeauty.what_are_you_worries_about }}</p></div></div>
+    <div class="q-a-section" id="21"><div class="q-col"><p>WHAT'S YOUR MONTHLY BUDGET FOR YOU HAIR CARE?</p></div><div class="a-col"><p>{{ hbeauty.whats_your_monthly_budget_for_you_hair_care }}</p></div></div>
+
+
+
+
+
+    {% else %}
+    {% endif %}
+</div>
+
+
+{% if hbeauty.personal_care==1 %}
+    <div class="personal_care">
+<H2>PERSONAL CARE</H2>
+
+        <div class="q-a-section" id="22"><div class="q-col"><p>ARE YOU WORRIED ABOUT...</p></div><div class="a-col"><p>{% if hbeauty.dry_hands_and_feet==1 %}Dry Hands and feet<br>{% else %}{% endif %}{% if hbeauty.wrinkles_on_hands_and_feet==1 %}Wrinkles on hands and feet<br>{% else %}{% endif %}{% if hbeauty.hardness_of_fingertips_of_both_hands_and_feet==1 %}Hardness of Fingertips of both hands and feet<br>{% else %}{% endif %}{% if hbeauty.cracking_of_foot_heels==1 %}Cracking of Foot heels<br>{% else %}{% endif %}{% if hbeauty.bad_smell_of_your_feet==1 %}Bad smell of your feet<br>{% else %}{% endif %}{% if hbeauty.roughness_of_body==1 %}Roughness of Body<br>{% else %}{% endif %}{% if hbeauty.bad_smell_of_body==1 %}Bad smell of Body<br>{% else %}{% endif %}</p></div></div>
+        <div class="q-a-section" id="23"><div class="q-col"><p>DO YOU PREFER USING PROTECTION AGAINST SUN (SUN CARE)?</p></div><div class="a-col"><p>{{ hbeauty.do_you_prefer_using_protection_against_sun_sun_care }}</p></div></div>
+        <div class="q-a-section" id="24"><div class="q-col"><p>WHICH FRAGRANCE PRODUCTS DO YOU PREFER USING?</p></div><div class="a-col"><p>{% if hbeauty.roll_on_deodorant==1 %}Roll on Deodorant<br>{% else %}{% endif %}{% if hbeauty.body_deo_spray==1 %}Body Deo Spray<br>{% else %}{% endif %}{% if hbeauty.body_mist==1 %}Body Mist<br>{% else %}{% endif %}{% if hbeauty.perfume==1 %}Perfume<br>{% else %}{% endif %}</p></div></div>
+        <div class="q-a-section" id="25"><div class="q-col"><p>HOW OFTEN DO YOU USE A PERFUME FOR YOU?</p></div><div class="a-col"><p>
+            {{hbeauty.how_often_do_you_use_a_perfume_for_you}}</p></div></div>
+        <div class="q-a-section" id="26"><div class="q-col"><p>WHAT'S YOUR BUDGET FOR THE PERSONAL CARE?</p></div><div class="a-col"><p>
+            {{hbeauty.whats_your_budget_for_the_personal_care}}</p></div></div>
+
+
+{% else %}
+{% endif %}
+    </div>
+{% if hbeauty.health_wellness==1 %}
+<div class="health_wellness">
+<h2>HEALTH & WELLNESS</h2>
+
+    <div class="q-a-section" id="27"><div class="q-col"><p>ARE YOU CURRENTLY USING ANY FOOD SUPPLEMENT?</p></div><div class="a-col"><p>
+        {{hbeauty.are_you_currently_using_any_food_supplement}}</p></div></div>
+    <div class="q-a-section" id="28"><div class="q-col"><p>WHAT IS THE PURPOSE OF USING FOOD SUPPLEMENT?</p></div><div class="a-col"><p>{% if hbeauty.roll_on_deodorant==1 %}Roll on Deodorant<br>{% else %}{% endif %}{% if hbeauty.body_deo_spray==1 %}Body Deo Spray<br>{% else %}{% endif %}{% if hbeauty.body_mist==1 %}Body Mist<br>{% else %}{% endif %}{% if hbeauty.perfume==1 %}Perfume<br>{% else %}{% endif %}</p></div></div>
+    <div class="q-a-section" id="29"><div class="q-col"><p>ARE YOU USING ANY HEALTH PRODUCTS (CAPSULES/ POWDER) FOR ANY SPECIFIC REASONS?</p></div><div class="a-col"><p>
+        {{hbeauty.specific_reasons}}</p></div></div>
+    <div class="q-a-section" id="30"><div class="q-col"><p>DO YOU HAVE AN INTAKE OF PROPER BALANCED DIET?</p></div><div class="a-col"><p>
+        {{hbeauty.do_you_have_an_intake_of_proper_balanced_diet}}</p></div></div>
+    <div class="q-a-section" id="31"><div class="q-col"><p>WHAT'S THE BUDGET FOR YOUR HEALTH & WELLNESS?</p></div><div class="a-col"><p>
+        {{hbeauty.whats_the_budget_for_your_health_wellness}}</p></div></div>
+
+
+{% else %}
+{% endif %}
+</div>
+
+<script>
+    var aa = '{{hbeauty.boosts_confidence}}';
+    var ab = '{{hbeauty.enhance_beauty}}';
+    var ac = '{{hbeauty.to_look_younger}}';
+    var ad = '{{hbeauty.it_is_so_much_fun}}';
+    var ae = '{{hbeauty.clear_complexion}}';
+    var af = '{{hbeauty.will_keep_your_skin_protected}}';
+    var ag = '{{hbeauty.makeup_makes_you_look_perfect_in_photos}}';
+    var ah = '{{ hbeauty.you_can_showcase_your_sense_of_selfcare }}';
+    var ba = '{{ hbeauty.foundation }}';
+    var bb= '{{ hbeauty.concealer }}';
+    var bc = '{{ hbeauty.compact }}';
+    var bd = '{{ hbeauty.cc_cream }}';
+    var be = '{{ hbeauty.blusher }}';
+    var bf = '{{ hbeauty.other }}';
+    var bg = '{{ hbeauty.data_41 }}';
+    var ca = '{{hbeauty.when_do_you_prefer_applying_foundation}}';
+    var da = '{{ hbeauty.mascara }}';
+    var db = '{{ hbeauty.eye_pencil }}';
+    var dc = '{{ hbeauty.eye_shadow }}';
+    var dd = '{{ hbeauty.browcara }}';
+    var de = '{{ hbeauty.other2 }}';
+    var df = '{{ hbeauty.data_50 }}';
+    var ea = '{{ hbeauty.lip_balm }}';
+    var eb = '{{ hbeauty.lip_liner }}';
+    var ec = '{{ hbeauty.lip_gloss }}';
+    var ed = '{{ hbeauty.lipstick }}';
+    var fa = '{{ hbeauty.matte_nail_polish }}';
+    var fb = '{{ hbeauty.shiny_metallic_nail_polish }}';
+    var fc = '{{ hbeauty.top_coat }}';
+    var fd = '{{ hbeauty.base_coat }}';
+    var fe = '{{ hbeauty.nail_file }}';
+    var ga = '{{ hbeauty.whats_your_monthly_budget_for_you_color_cosmetics }}';
+    var ha = '{{ hbeauty.what_is_your_skin_type }}';
+    var ia = '{{ hbeauty.what_do_you_use_to_clean_your_face }}';
+    var ja = '{{ hbeauty.does_your_skin_feel_dried_up_and_stretched_after_applying_soap }}';
+    var ka = '{{ hbeauty.do_you_look_after_your_skin_regularly }}';
+    var la = '{{ hbeauty.does_your_pores_remain_open }}';
+    var ma = '{{ hbeauty.skin_sagging }}';
+    var mb = '{{ hbeauty.lip_wrinkles }}';
+    var mc = '{{ hbeauty.lines_around_eyes }}';
+    var md = '{{ hbeauty.glabellar_wrinkles }}';
+    var me = '{{ hbeauty.spots_and_scars_on_face }}';
+    var mf = '{{ hbeauty.puffiness }}';
+    var mg = '{{ hbeauty.uneven_skin_tone }}';
+    var mh = '{{ hbeauty.dark_circles }}';
+    var mi = '{{ hbeauty.pimples }}';
+    var mj = '{{ hbeauty.sticky_skin }}';
+    var mk = '{{ hbeauty.blackheads }}';
+    var ml = '{{ hbeauty.wrinkles }}';
+    var mm = '{{ hbeauty.roughness }}';
+    var mn = '{{ hbeauty.under_eye_dark_circles }}';
+    var mo = '{{ hbeauty.enlarged_pores }}';
+    var mp = '{{ hbeauty.redness }}';
+    var mq = '{{ hbeauty.dullness }}';
+    var mr = '{{ hbeauty.whiteheads }}';
+    var ms = '{{ hbeauty.dehydrated_skin }}';
+    var na = '{{ hbeauty.how_often_do_you_use_face_scrub__face_mask }}';
+    var oa = '{{ hbeauty.whats_your_monthly_budget_for_you_skin_care }}';
+    var pa = '{{ hbeauty.whats_your_hair_type }}';
+    var qa = '{{ hbeauty.any_shampoo }}';
+    var qb = '{{ hbeauty.specific_shampoo_for_your_hair_type }}';
+    var qc = '{{ hbeauty.hair_conditioner }}';
+    var qd = '{{ hbeauty.hair_mask }}';
+    var qe = '{{ hbeauty.hair_oil }}';
+    var qf = '{{ hbeauty.hair_serum }}';
+    var qg = '{{ hbeauty.hair_treatment_any }}';
+    var ra = '{{ hbeauty.how_frequently_you_shampoo_your_hair }}';
+    var sa = '{{ hbeauty.do_you_use_any_products_for_your_hair_styling }}';
+    var ta = '{{ hbeauty.what_are_you_worries_about }}';
+    var ua = '{{ hbeauty.whats_your_monthly_budget_for_you_hair_care }}';
+    var va = '{{ hbeauty.dry_hands_and_feet }}';
+    var vb = '{{ hbeauty.wrinkles_on_hands_and_feet }}';
+    var vc = '{{ hbeauty.hardness_of_fingertips_of_both_hands_and_feet }}';
+    var vd = '{{ hbeauty.cracking_of_foot_heels }}';
+    var ve = '{{ hbeauty.bad_smell_of_your_feet }}';
+    var vf = '{{ hbeauty.roughness_of_body }}';
+    var vg = '{{ hbeauty.bad_smell_of_body }}';
+    var wa = '{{ hbeauty.do_you_prefer_using_protection_against_sun_sun_care }}';
+    var xa = '{{ hbeauty.roll_on_deodorant }}';
+    var xb = '{{ hbeauty.body_deo_spray }}';
+    var xc = '{{ hbeauty.body_mist }}';
+    var xd = '{{ hbeauty.perfume }}';
+    var ya = '{{ hbeauty.how_often_do_you_use_a_perfume_for_you }}';
+    var za = '{{ hbeauty.whats_your_budget_for_the_personal_care }}';
+    var aaa = '{{ hbeauty.are_you_currently_using_any_food_supplement }}';
+    var aba = '{{ hbeauty.muscle_building_protein_intake }}';
+    var abb = '{{ hbeauty.staying_fit }}';
+    var abc = '{{ hbeauty.for_having_a_healthy_and_complete_diet_nutrition }}';
+    var abd = '{{ hbeauty.for_immunity_of_the_body }}';
+    var abe = '{{ hbeauty.for_having_an_antioxidant }}';
+    var aca = '{{ hbeauty.specific_reasons }}';
+    var ada = '{{ hbeauty.do_you_have_an_intake_of_proper_balanced_diet }}';
+    var aea = '{{ hbeauty.whats_the_budget_for_your_health_wellness }}';
+
+
+
+
+
+
+
+    if (aa==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else if(ab==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else if(ac==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else if(ad==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else if(ae==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else if(af==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else if(ag==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else if(ah==1){
+        document.getElementById("1").style.display = "flex";
+    }
+    else{
+        document.getElementById("1").style.display = "none";
+    }
+
+    if(ba==1){
+        document.getElementById("2").style.display = "flex";
+    }
+    else if(bb==1){
+        document.getElementById("2").style.display = "flex";
+    }
+    else if(bc==1){
+        document.getElementById("2").style.display = "flex";
+    }
+    else if(bd==1){
+        document.getElementById("2").style.display = "flex";
+    }
+    else if(be==1){
+        document.getElementById("2").style.display = "flex";
+    }
+    else if(bf==1){
+        document.getElementById("2").style.display = "flex";
+    }
+    else if(bg==1){
+        document.getElementById("2").style.display = "flex";
+    }
+    else{
+        document.getElementById("2").style.display = "none";
+    }
+    if(ca==""){
+        document.getElementById("3").style.display = "none";
+    }
+    else{
+        document.getElementById("3").style.display = "flex";
+    }
+
+    if (da==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(db==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(dc==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(dd==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(de==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else if(df==1){
+        document.getElementById("4").style.display = "flex";
+    }
+    else{
+        document.getElementById("4").style.display = "none";
+    }
+
+    if (ea==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(eb==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(ec==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else if(ed==1){
+        document.getElementById("5").style.display = "flex";
+    }
+    else{
+        document.getElementById("5").style.display = "none";
+    }
+
+    if (fa==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(fb==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(fc==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(fd==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else if(fe==1){
+        document.getElementById("6").style.display = "flex";
+    }
+    else{
+        document.getElementById("6").style.display = "none";
+    }
+
+    if(ga==""){
+        document.getElementById("7").style.display = "none";
+    }
+    else{
+        document.getElementById("7").style.display = "flex";
+    }
+
+    if(ha==""){
+        document.getElementById("8").style.display = "none";
+    }
+    else{
+        document.getElementById("8").style.display = "flex";
+    }
+    if(ia==""){
+        document.getElementById("9").style.display = "none";
+    }
+    else{
+        document.getElementById("9").style.display = "flex";
+    }
+
+    if(ja==""){
+        document.getElementById("10").style.display = "none";
+    }
+    else{
+        document.getElementById("10").style.display = "flex";
+    }
+
+    if(ka==""){
+        document.getElementById("11").style.display = "none";
+    }
+    else{
+        document.getElementById("11").style.display = "flex";
+    }
+
+    if(la==""){
+        document.getElementById("12").style.display = "none";
+    }
+    else{
+        document.getElementById("12").style.display = "flex";
+    }
+    if (ma==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mb==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mc==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(md==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(me==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mf==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mg==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mh==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mi==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mj==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mk==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(ml==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mn==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mo==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mp==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mq==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(mr==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else if(ms==1){
+        document.getElementById("13").style.display = "flex";
+    }
+    else{
+        document.getElementById("13").style.display = "none";
+    }
+
+    if(na==""){
+        document.getElementById("14").style.display = "none";
+    }
+    else{
+        document.getElementById("14").style.display = "flex";
+    }
+    if(oa==""){
+        document.getElementById("15").style.display = "none";
+    }
+    else{
+        document.getElementById("15").style.display = "flex";
+    }
+    
+    if(pa==""){
+        document.getElementById("16").style.display = "none";
+    }
+    else{
+        document.getElementById("16").style.display = "flex";
+    }
+
+    if (qa==1){
+        document.getElementById("17").style.display = "flex";
+    }
+    else if(qb==1){
+        document.getElementById("17").style.display = "flex";
+    }
+    else if(qc==1){
+        document.getElementById("17").style.display = "flex";
+    }
+    else if(qd==1){
+        document.getElementById("17").style.display = "flex";
+    }
+    else if(qe==1){
+        document.getElementById("17").style.display = "flex";
+    }
+    else if(qf==1){
+        document.getElementById("17").style.display = "flex";
+    }
+    else if(qg==1){
+        document.getElementById("17").style.display = "flex";
+    }
+    else{
+        document.getElementById("17").style.display = "none";
+    }
+
+    if(ra==""){
+        document.getElementById("18").style.display = "none";
+    }
+    else{
+        document.getElementById("18").style.display = "flex";
+    }
+    if(sa==""){
+        document.getElementById("19").style.display = "none";
+    }
+    else{
+        document.getElementById("19").style.display = "flex";
+    }
+    if(ta==""){
+        document.getElementById("20").style.display = "none";
+    }
+    else{
+        document.getElementById("20").style.display = "flex";
+    }
+    if(ua==""){
+        document.getElementById("21").style.display = "none";
+    }
+    else{
+        document.getElementById("21").style.display = "flex";
+    }
+
+    if (va==1){
+        document.getElementById("22").style.display = "flex";
+    }
+    else if(vb==1){
+        document.getElementById("22").style.display = "flex";
+    }
+    else if(vc==1){
+        document.getElementById("22").style.display = "flex";
+    }
+    else if(vd==1){
+        document.getElementById("22").style.display = "flex";
+    }
+    else if(ve==1){
+        document.getElementById("22").style.display = "flex";
+    }
+    else if(vf==1){
+        document.getElementById("22").style.display = "flex";
+    }
+    else if(vg==1){
+        document.getElementById("22").style.display = "flex";
+    }
+    else{
+        document.getElementById("22").style.display = "none";
+    }
+
+    if(wa==""){
+        document.getElementById("23").style.display = "none";
+    }
+    else{
+        document.getElementById("23").style.display = "flex";
+    }
+
+    if (xa==1){
+        document.getElementById("24").style.display = "flex";
+    }
+    else if(xb==1){
+        document.getElementById("24").style.display = "flex";
+    }
+    else if(xc==1){
+        document.getElementById("24").style.display = "flex";
+    }
+    else if(xd==1){
+        document.getElementById("24").style.display = "flex";
+    }
+    else{
+        document.getElementById("24").style.display = "none";
+    }
+
+    if(ya==""){
+        document.getElementById("25").style.display = "none";
+    }
+    else{
+        document.getElementById("25").style.display = "flex";
+    }
+
+    if(za==""){
+        document.getElementById("26").style.display = "none";
+    }
+    else{
+        document.getElementById("26").style.display = "flex";
+    }
+
+    if(aaa==""){
+        document.getElementById("27").style.display = "none";
+    }
+    else{
+        document.getElementById("27").style.display = "flex";
+    }
+
+    if (aba==1){
+        document.getElementById("28").style.display = "flex";
+    }
+    else if(abb==1){
+        document.getElementById("28").style.display = "flex";
+    }
+    else if(abc==1){
+        document.getElementById("28").style.display = "flex";
+    }
+    else if(abd==1){
+        document.getElementById("28").style.display = "flex";
+    }
+    else if(abe==1){
+        document.getElementById("28").style.display = "flex";
+    }
+    else{
+        document.getElementById("28").style.display = "none";
+    }
+    if(aca==""){
+        document.getElementById("29").style.display = "none";
+    }
+    else{
+        document.getElementById("29").style.display = "flex";
+    }
+    if(ada==""){
+        document.getElementById("30").style.display = "none";
+    }
+    else{
+        document.getElementById("30").style.display = "flex";
+    }
+    if(aea==""){
+        document.getElementById("31").style.display = "none";
+    }
+    else{
+        document.getElementById("31").style.display = "flex";
+    }
+</script>
