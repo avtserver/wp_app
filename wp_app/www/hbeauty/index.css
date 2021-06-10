@@ -108,7 +108,7 @@ h2 {
 a:link {
     text-decoration: none;
 }
-.btn {
+.btn1 {
     width: 70%;
     height: 50px;
     font-size: 1.5rem;
@@ -123,7 +123,7 @@ a:link {
     align-items: center;
 }
 
-.btn:hover {
+.btn1:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transform: translateY(2px);
     -webkit-animation: gradientBG 1.5s ease-in-out forwards;
