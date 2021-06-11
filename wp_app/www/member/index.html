@@ -1,0 +1,29 @@
+{% extends "templates/web.html" %}
+{% block content %}
+
+
+<div class="site-section site-section-sm bg-light">
+    <div class="container">
+
+        <div class="row mb-5">
+ {% for oriflame_premium_member in opmember %}
+            <div class="col-md-6 col-lg-4 mb-4 ">
+                <div id="book">
+                    <figure class="snip1336">
+                      <img src="/assets/wp_app/winnerspie/assets/images/coverpic.jpg" alt="sample87" />
+                      <figcaption>
+                        <img src="{{oriflame_premium_member.profile_image}}" alt="profile-sample4" class="profile" />
+                        <h2>{{oriflame_premium_member.name1}}<span>{{oriflame_premium_member.designation}}</span></h2>
+                        <p>{{oriflame_premium_member.about_me}}</p>
+                        <a href="#" class="follow">Follow</a>
+                        <a href="/member/profile/{{oriflame_premium_member.name}}" class="info">More Info</a>
+
+                      </figcaption>
+                    </figure>
+                </div>
+            </div>
+{% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
