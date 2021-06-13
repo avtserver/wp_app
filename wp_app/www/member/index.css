@@ -1,10 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.p-container{
+  width: 100%;
+  margin:20px auto;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+  .p-container {
+    width: 100%;
+    margin: auto;
+    /*padding: 10px 10px;*/
+    padding: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .snip1336 {
   font-family: 'Roboto', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
+  margin: 10px 10px;
+  /*min-width: 230px;*/
   max-width: 315px;
   width: 100%;
   color: #ffffff;
@@ -12,6 +30,7 @@
   line-height: 1.4em;
   background-color: #141414;
 }
+
 .snip1336 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -29,6 +48,10 @@
   background-color: #141414;
   padding: 25px;
   position: relative;
+  min-width: 315px;
+  max-width: 315px;
+  min-height: 300px;
+  max-height: 300px;
 }
 .snip1336 figcaption:before {
   position: absolute;
@@ -62,15 +85,16 @@
 .snip1336 .profile {
   border-radius: 50%;
   position: absolute;
-
   bottom: 100%;
   left: 25px;
   z-index: 1;
-  max-width: 90px;
+  /*max-width: 90px;*/
   /*max-height: 90px;*/
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  display: inline-block;
+  min-width: 8rem;
+  max-width: 8rem;
+  height: 8rem;
 
 }
 .snip1336 .follow {
@@ -93,4 +117,11 @@
   font-size: 0.8em;
   letter-spacing: 1px;
   opacity: 0.8;
+  color: lightgray;
+
+}
+.about-me{
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
 }

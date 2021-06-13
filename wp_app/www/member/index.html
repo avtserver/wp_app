@@ -1,9 +1,7 @@
-{% extends "templates/web.html" %}
-{% block content %}
 
 
 <div class="site-section site-section-sm bg-light">
-    <div class="container">
+    <div class="p-container">
 
         <div class="row mb-5">
  {% for oriflame_premium_member in opmember %}
@@ -14,8 +12,11 @@
                       <figcaption>
                         <img src="{{oriflame_premium_member.profile_image}}" alt="profile-sample4" class="profile" />
                         <h2>{{oriflame_premium_member.name1}}<span>{{oriflame_premium_member.designation}}</span></h2>
-                        <p>{{oriflame_premium_member.about_me}}</p>
-                        <a href="#" class="follow">Follow</a>
+                        <div class="about-me">
+                            <p>{{oriflame_premium_member.about_me}}</p>
+                        </div>
+
+                        <a href="#" class="follow">Follow me</a>
                         <a href="/member/profile/{{oriflame_premium_member.name}}" class="info">More Info</a>
 
                       </figcaption>
@@ -26,4 +27,5 @@
         </div>
     </div>
 </div>
-{% endblock %}
+
+

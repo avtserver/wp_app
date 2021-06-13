@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
- "autoname": "format:{#####}",
+ "autoname": "naming_series:",
  "creation": "2021-05-27 14:01:40.337753",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,6 +11,7 @@
   "first_name",
   "last_name",
   "age_group",
+  "naming_series",
   "column_break_5",
   "mobile_number",
   "email_id",
@@ -144,9 +145,7 @@
   "for_having_an_antioxidant",
   "specific_reasons",
   "do_you_have_an_intake_of_proper_balanced_diet",
-  "whats_the_budget_for_your_health_wellness",
-  "route",
-  "published"
+  "whats_the_budget_for_your_health_wellness"
  ],
  "fields": [
   {
@@ -983,21 +982,15 @@
    "options": "500/- to 1000/-\n1000/- to 2000/-\n2000/- to 5000/-\n5000+"
   },
   {
-   "fieldname": "route",
+   "fieldname": "naming_series",
    "fieldtype": "Data",
-   "label": "route"
-  },
-  {
-   "fieldname": "published",
-   "fieldtype": "Data",
-   "label": "published"
+   "hidden": 1,
+   "label": "Naming Series"
   }
  ],
- "has_web_view": 1,
  "index_web_pages_for_search": 1,
- "is_published_field": "published",
  "links": [],
- "modified": "2021-06-07 17:57:46.714736",
+ "modified": "2021-06-11 20:58:24.281088",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "HBeauty",
@@ -1028,7 +1021,6 @@
    "write": 1
   }
  ],
- "route": "nbeauty",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

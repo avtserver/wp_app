@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
- "autoname": "format:{#####}",
+ "autoname": "naming_series:",
  "creation": "2021-06-02 19:19:31.729945",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,6 +11,7 @@
   "first_name",
   "last_name",
   "age_group",
+  "naming_series",
   "column_break_5",
   "mobile_number",
   "email_id",
@@ -63,9 +64,7 @@
   "budget_health_wellness",
   "assistance_from_us_section",
   "assistance_from_us",
-  "pick_a_date",
-  "route",
-  "published"
+  "pick_a_date"
  ],
  "fields": [
   {
@@ -410,20 +409,16 @@
    "label": "Pick a Date & Time"
   },
   {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "label": "Route"
-  },
-  {
    "default": "0",
-   "fieldname": "published",
-   "fieldtype": "Check",
-   "label": "Published"
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-06-05 13:06:36.356834",
+ "modified": "2021-06-11 20:56:22.898645",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "WWave",

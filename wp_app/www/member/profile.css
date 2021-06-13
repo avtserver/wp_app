@@ -150,10 +150,25 @@
     font-size: 1rem;
     font-weight: 400;
     color: #100029;
-
 }
 
 
+.header{
+    text-align: center;
+    background: orange;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    /*background-color: #fff;*/
+    /*box-shadow: 0 0.1rem 8rem rgb(33 33 33);*/
+    box-shadow: 0px 15px 10px -15px #111;
+    align-items: center;
+    border-radius: 0.8rem;
+}
 
 @media (max-width: 700px) {
     .info-container{
