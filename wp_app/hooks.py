@@ -51,7 +51,7 @@ app_license = "MIT"
 website_route_rules = [
     {'from_route':'/w-wave/detail/<docname>', 'to_route':'w-wave/detail'},
     {'from_route':'/hbeauty/detail/<docname>', 'to_route':'hbeauty/detail'},
-    {'from_route':'/member/profile/<docname>', 'to_route':'member/profile'},
+    {'from_route':'/wp-member/profile/<docname>', 'to_route':'wp-member/profile'},
     # {'from_route':'/gtaddress/detail/<docname>', 'to_route':'gtaddress/detail'},
 ]
 

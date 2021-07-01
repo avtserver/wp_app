@@ -1,0 +1,136 @@
+
+
+/*--------new team sec*/
+
+
+.team-new-sec{
+    text-align: center;
+    margin: 10px;
+    color: #816816;
+    margin-top: 20px;
+
+
+}
+.team-new-sec h1{
+    margin-bottom: 70px;
+
+
+}
+.team-card{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content:center;
+    flex-wrap:wrap;
+    /*margin-top: 20px;*/
+
+
+}
+.team-card .team-member{
+    background: #E7EBEE;
+    width: 300px;
+    margin: 20px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    /*border: hidden 1px;*/
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.member-info{
+
+    background:#E7EBEE;
+    text-align: center;
+    /*color: #393D45;*/
+}
+.member-aboutus{
+    background: #393D45;
+    padding-top: 8rem;
+    margin-top: -8rem;
+    padding-bottom: 25px;
+    width: 100%;
+    height: 300px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    /*padding-left:10px;*/
+    padding-left: 15px;
+    padding-right:15px;
+
+/*overflow: hidden;*/
+/*white-space: break-spaces;*/
+}
+.team-card .team-member h3{
+    margin-top: 20px;
+    color: #393D45;
+    text-transform: uppercase;
+}
+.team-card .team-member p.role{
+    color: #777;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+.member-aboutus p{
+    margin-top: 30px;
+    line-height: 20px;
+    color: #fff;
+    /*overflow:hidden;*/
+    padding: 0 10px;
+    font-style:italic;
+
+
+}
+.team-cover-img{
+    clip-path: polygon(0 0, 100% 0, 100% 63%, 0 89%);
+}
+.team-card .team-member .team-img{
+    width: 150px;
+    height: 150px;
+    /*top: -50px;*/
+    margin-top: -8rem;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    background: #393D45;
+    border-radius:50%;
+    /*border: 10px solid #393D45;*/
+
+}
+.team-card .team-member .team-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+
+.button-sec{
+    margin: 20px 0;
+    transition: all 1s;
+
+}
+.button-sec .follow-btn,
+.button-sec .info-btn{
+    padding: 5px 10px;
+    border: 0.2rem solid #393D45;
+    margin: 20px 10px;
+    border-radius: 15px;
+    text-decoration:none;
+}
+
+.button-sec .follow-btn:hover,
+.button-sec .info-btn:hover{
+    background: #393D45;
+    color: #E7EBEE;
+    border-radius: 15px;
+    text-decoration:none;
+    cursor:pointer;
+
+
+}
+
+.info-btn:hover{
+
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(1.4);
+}

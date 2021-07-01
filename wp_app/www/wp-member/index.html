@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+<div class="container text-center">
+<h1>ORIFLAME PREMIUME MEMBERS</h1>
+    </div>
+<div class="site-section site-section-sm bg-light">
+    <div class="p-container">
+
+        <div class="row mb-5">
+ {% for oriflame_premium_member in opmember %}
+            <div class="col-md-6 col-lg-4 mb-4 ">
+<!--                <div id="book">-->
+<div class="team-new-sec">
+<!--    <h1>Our Team</h1>-->
+        <div class="team-card">
+
+            <div class="team-member">
+                <div class="member-info">
+                    <h3>{{oriflame_premium_member.name1}}</h3>
+                <p class="role">{{oriflame_premium_member.designation}}</p>
+                </div>
+                <div class="team-cover-img">
+                    <img src="/assets/wp_app/winnerspie/assets/images/coverpic.jpg">
+                </div>
+                <div class="team-img">
+                    <img src="{{oriflame_premium_member.profile_image}}">
+                </div>
+                    <div class="member-aboutus">
+                <p>{{oriflame_premium_member.about_me}}</p>
+                </div>
+                        <div class="button-sec">
+                    <a href="#" class="follow-btn">Follow me</a>
+                        <a href="/member/profile/{{oriflame_premium_member.name}}" class="info-btn">More Info</a>
+
+
+                </div>
+            </div>
+        </div>
+
+</div>
+
+       </div>
+<!--            </div>-->
+{% endfor %}
+        </div>
+    </div>
+</div>

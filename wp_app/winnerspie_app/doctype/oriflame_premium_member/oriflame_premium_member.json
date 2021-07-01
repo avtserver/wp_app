@@ -9,12 +9,13 @@
  "field_order": [
   "sponser_id",
   "name1",
+  "blogger",
   "designation",
   "mobile_number",
   "email",
   "column_break_6",
   "profile_image",
-  "short_bio_data",
+  "short_intro",
   "about_me_section",
   "about_me",
   "gallery_section",
@@ -71,11 +72,6 @@
    "label": "Profile Image"
   },
   {
-   "fieldname": "short_bio_data",
-   "fieldtype": "Small Text",
-   "label": "Short Bio-Data"
-  },
-  {
    "collapsible": 1,
    "fieldname": "about_me_section",
    "fieldtype": "Section Break",
@@ -108,13 +104,27 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "published"
+  },
+  {
+   "fieldname": "blogger",
+   "fieldtype": "Link",
+   "label": "Blogger",
+   "options": "Blogger",
+   "reqd": 1
+  },
+  {
+   "description": "Description for listing page, in plain text, only a couple of lines. (max 200 characters)",
+   "fieldname": "short_intro",
+   "fieldtype": "Small Text",
+   "label": "Short Intro",
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2021-06-13 15:20:19.362442",
+ "modified": "2021-06-20 16:57:18.303983",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Oriflame Premium Member",
