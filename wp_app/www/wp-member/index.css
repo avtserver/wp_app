@@ -111,11 +111,12 @@
 }
 .button-sec .follow-btn,
 .button-sec .info-btn{
-    padding: 5px 10px;
-    border: 0.2rem solid #393D45;
+    padding: 10px 18px;
+    border: 0.1rem solid #393D45;
     margin: 20px 10px;
     border-radius: 15px;
     text-decoration:none;
+
 }
 
 .button-sec .follow-btn:hover,

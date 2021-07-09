@@ -11,17 +11,32 @@
   "name1",
   "blogger",
   "designation",
+  "profile_image",
+  "column_break_6",
   "mobile_number",
   "email",
-  "column_break_6",
-  "profile_image",
-  "short_intro",
-  "about_me_section",
   "about_me",
+  "profile_video_section",
+  "video_type",
+  "column_break_12",
+  "upload_your_profile_video",
+  "paste_youtube_video_link",
+  "social_media_handle_section",
+  "facebook_id",
+  "google_id",
+  "column_break_13",
+  "twitter_id",
+  "instagram_id",
+  "bj_section",
+  "business_journey",
+  "route",
+  "published",
+  "our_team_section",
+  "team_members",
   "gallery_section",
   "gallery_image",
-  "route",
-  "published"
+  "achievement_and_awards_section",
+  "member_achievement_and_awards"
  ],
  "fields": [
   {
@@ -36,7 +51,7 @@
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name",
+   "label": "Full Name",
    "reqd": 1
   },
   {
@@ -52,7 +67,9 @@
    "fieldname": "mobile_number",
    "fieldtype": "Data",
    "label": "Mobile Number",
-   "options": "Phone"
+   "length": 10,
+   "options": "Phone",
+   "reqd": 1
   },
   {
    "fieldname": "email",
@@ -69,24 +86,21 @@
   {
    "fieldname": "profile_image",
    "fieldtype": "Attach Image",
-   "label": "Profile Image"
+   "label": "Profile Image",
+   "reqd": 1
   },
   {
-   "collapsible": 1,
-   "fieldname": "about_me_section",
-   "fieldtype": "Section Break",
-   "label": "About me"
-  },
-  {
+   "description": "Description for listing page, in plain text, only a couple of lines. (max 200 characters)",
    "fieldname": "about_me",
-   "fieldtype": "Text Editor",
-   "label": "About me"
+   "fieldtype": "Small Text",
+   "label": "About me",
+   "reqd": 1
   },
   {
    "collapsible": 1,
    "fieldname": "gallery_section",
    "fieldtype": "Section Break",
-   "label": "Gallery Section"
+   "label": "GALLERY SECTION"
   },
   {
    "fieldname": "gallery_image",
@@ -97,12 +111,14 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "route"
   },
   {
    "default": "0",
    "fieldname": "published",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "published"
   },
   {
@@ -113,18 +129,106 @@
    "reqd": 1
   },
   {
-   "description": "Description for listing page, in plain text, only a couple of lines. (max 200 characters)",
-   "fieldname": "short_intro",
-   "fieldtype": "Small Text",
-   "label": "Short Intro",
-   "reqd": 1
+   "fieldname": "business_journey",
+   "fieldtype": "Text Editor",
+   "label": "Business Journey "
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "bj_section",
+   "fieldtype": "Section Break",
+   "label": "BUSINESS JOURNEY"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "our_team_section",
+   "fieldtype": "Section Break",
+   "label": "OUR TEAM"
+  },
+  {
+   "fieldname": "team_members",
+   "fieldtype": "Table",
+   "label": "Team Members",
+   "options": "Member Team"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "achievement_and_awards_section",
+   "fieldtype": "Section Break",
+   "label": "ACHIEVEMENT & AWARDS"
+  },
+  {
+   "fieldname": "member_achievement_and_awards",
+   "fieldtype": "Table",
+   "label": "Member Achievement and Awards",
+   "options": "Member Achievement and Awards"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "social_media_handle_section",
+   "fieldtype": "Section Break",
+   "label": "SOCIAL MEDIA HANDLE"
+  },
+  {
+   "fieldname": "facebook_id",
+   "fieldtype": "Data",
+   "label": "Facebook ID"
+  },
+  {
+   "fieldname": "google_id",
+   "fieldtype": "Data",
+   "label": "Google ID"
+  },
+  {
+   "fieldname": "twitter_id",
+   "fieldtype": "Data",
+   "label": "Twitter ID"
+  },
+  {
+   "fieldname": "instagram_id",
+   "fieldtype": "Data",
+   "label": "Instagram ID"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profile_video_section",
+   "fieldtype": "Section Break",
+   "label": "PROFILE VIDEO"
+  },
+  {
+   "fieldname": "video_type",
+   "fieldtype": "Select",
+   "label": "Video Type",
+   "options": "YouTube\nUpload or Attach"
+  },
+  {
+   "depends_on": "eval:doc.video_type==='Upload or Attach'",
+   "description": "This feature is not available now! ",
+   "fieldname": "upload_your_profile_video",
+   "fieldtype": "HTML",
+   "label": "Upload Your Profile Video",
+   "options": "<font color=\"red\">This feature is not available now!</font>",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.video_type==='YouTube'",
+   "fieldname": "paste_youtube_video_link",
+   "fieldtype": "Data",
+   "label": "Paste YouTube Video Link"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2021-07-03 22:08:22.819900",
+ "modified": "2021-07-07 12:12:28.585136",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Oriflame Premium Member",

@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "autoname": "format:Ref-{MM}-{DD}-{######}",
+ "creation": "2021-07-07 15:33:14.945206",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account_details_section",
+  "email",
+  "personal_details_section",
+  "first_name",
+  "last_name",
+  "column_break_6",
+  "dob",
+  "mobile_number",
+  "kyc_address_as_per_the_document_section",
+  "pin_code",
+  "state",
+  "citydistrict",
+  "column_break_13",
+  "locality",
+  "address",
+  "other_details_section",
+  "referred_by",
+  "sponsored_by",
+  "column_break_19",
+  "sponsor_id",
+  "kyc_document_details_section",
+  "select_document_type",
+  "enter_document_number_mentioned_on_your_kyc_document",
+  "kyc_documents",
+  "column_break_26",
+  "pan_card",
+  "nominee"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_details_section",
+   "fieldtype": "Section Break",
+   "label": "Account Details"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email ID",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name (As per KYC Document)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name (As per KYC Document)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Birth Date (As per KYC Document)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kyc_address_as_per_the_document_section",
+   "fieldtype": "Section Break",
+   "label": "KYC Address (As per the Document)"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code",
+   "length": 6,
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "citydistrict",
+   "fieldtype": "Data",
+   "label": "City/District",
+   "reqd": 1
+  },
+  {
+   "fieldname": "locality",
+   "fieldtype": "Data",
+   "label": "Locality"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Backend Operation"
+  },
+  {
+   "fieldname": "kyc_document_details_section",
+   "fieldtype": "Section Break",
+   "label": "KYC Document Details"
+  },
+  {
+   "fieldname": "select_document_type",
+   "fieldtype": "Select",
+   "label": "Select Document Type",
+   "options": "Aadhaar Card\nVoter ID\nPassport\nDriving License\nState Domicile Certificate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "enter_document_number_mentioned_on_your_kyc_document",
+   "fieldtype": "Data",
+   "label": "Enter document number mentioned on your KYC document"
+  },
+  {
+   "fieldname": "kyc_documents",
+   "fieldtype": "Attach",
+   "label": "KYC Documents",
+   "length": 2
+  },
+  {
+   "fieldname": "pan_card",
+   "fieldtype": "Attach",
+   "label": "PAN Card"
+  },
+  {
+   "fieldname": "nominee",
+   "fieldtype": "Data",
+   "label": "Nominee"
+  },
+  {
+   "fieldname": "sponsored_by",
+   "fieldtype": "Data",
+   "label": "Sponsored By"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "label": "Referred By"
+  },
+  {
+   "fieldname": "sponsor_id",
+   "fieldtype": "Data",
+   "label": "Sponsor ID"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-08 10:49:46.539480",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "Become a Brand Partner",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Oriflame Premium Member",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

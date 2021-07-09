@@ -1,13 +1,16 @@
 {% extends "templates/web.html" %}
 {% block content %}
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      xmlns="http://www.w3.org/1999/html">
 <!--<link rel="stylesheet" src="/assets/css/fontawesome.css">-->
 <div class="info-container">
     <div class="first-sec">
 
         <div class="img-sec">
+
             <img src="{{ opmember.profile_image }}">
+
             <span><b>Sponser ID :</b> {{ opmember.name }}</span>
         </div>
 
@@ -33,17 +36,55 @@
                 Follow me
             </a>
             <div class="social-media-main">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-google-plus-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-twitter-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> </a> </li>
+                    <li><a href="https://facebook.com/{{opmember.facebook_id}}"><i class="fab fa-facebook-square"></i> </a> </li>
+                    <li><a href="https://plus.google.com/{{opmember.google_id}}"><i class="fab fa-google-plus-square"></i> </a> </li>
+                    <li><a href="https://twitter.com/{{opmember.twitter_id}}"><i class="fab fa-twitter-square"></i> </a> </li>
+                    <li><a href="https://instagram.com/{{opmember.instagram_id}}"><i class="fab fa-instagram"></i> </a> </li>
 
 
                     </div>
         </div></div>
-            <div class="third-sec">
-                <iframe class="video-card" width="353" height="240" src="https://www.youtube.com/embed/BKeQA5Zqxzk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
 
+            <div class="third-sec">
+<!--                <iframe class="video-card" width="353" height="240"  src="{{ opmember.paste_youtube_video_link}}?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>-->
+                <iframe class="video-card" width="353" height="240" src="{{ opmember.paste_youtube_video_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+            </div>
+
+
+
+<section class="custom-form">
+    <div class="row">
+        <div class="cf-col1">
+            <h3>DISCOVER YOUR HIDDEN BEAUTY WITH US</h3>
+            <p>KINDLY FILL IN THE FORM FOR SELECTION OF CUSTOMIZED PRODUCTS SUITS YOU PERFECTLY!</p>
+            <a class="blue-cta-button" href="https://winnerspie.com/hidden-beauty-form?new=1&referred_by={{ opmember.name }}">Click Here</a>
+        </div>
+        <div class="cf-col2">
+              <h3>WELLNESS WAVE</h3>
+            <p>KINDLY FILL IN THE FORM FOR SELECTION OF CUSTOMIZED PRODUCTS SUITS YOU PERFECTLY!</p>
+            <a class="blue-cta-button" href="https://winnerspie.com/wellness-wave-form?new=1&referred_by={{ opmember.name }}">Click Here</a>
+        </div>
+
+ </div>
+</section>
+
+<div class="section-cta-container">
+	<div class="section-cta">
+		<h2 class="title">Become a Brand Partner</h2>
+
+		<div class="mt-6">
+			<a href="https://winnerspie.com/become-a-brand-partner?new=1&referred_by={{ opmember.name }}" class="blue-cta-button">Join Today</a>
+		</div>
+
+		<div class="description">
+		<p>Welcome to our online registration! Registering with us is quick and easy. Kindly fill in below form and click sign-up.</p>
+		</div>
+
+	</div>
+
+		<div class="confetti confetti-1"></div>
+		<div class="confetti confetti-2"></div>
+		<div class="confetti confetti-3"></div>
 
 </div>
 
@@ -55,7 +96,7 @@
     <div class="row">
         <div class="my-col1">
             <h3>Business Journey</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+            <p>{{ opmember.business_journey }}</p>
         </div>
         <div class="my-col2">
             <h3>About me</h3>
