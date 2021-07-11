@@ -1,0 +1,367 @@
+{
+ "actions": [],
+ "autoname": "format:SM Level-{MM}-{YY}-{#####}",
+ "creation": "2021-07-10 19:13:28.962968",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_details_section",
+  "full_name",
+  "mobile_number",
+  "column_break_3",
+  "email_id",
+  "city",
+  "section_break_7",
+  "your_highest_level_in_oriflame",
+  "how_long_have_you_been_in_oriflame",
+  "why_did_you_join_oriflame",
+  "self_use",
+  "to_earn_money_by_selling_products",
+  "to_earn_money",
+  "self_identity",
+  "how_much_money",
+  "how_much_time_you_can_give_each_day_to_do_oriflame_business",
+  "get_that_income",
+  "do_you_have_an_idea_about_oriflames_business_plan",
+  "you_get",
+  "html1",
+  "monthly_income",
+  "royalty_income",
+  "cash_award",
+  "dream_programcar_and_house_fund",
+  "national_and_international_conferences",
+  "according_to_you_trainning",
+  "according_to_you_what",
+  "which_range",
+  "skincare",
+  "wellness",
+  "colour_cosmetics",
+  "personal_care",
+  "which_time_will_be_right_for_you_for_training",
+  "interacting_with_your_leader",
+  "would_you_like_to_train_on_sundays_too",
+  "the_business_plan_should_be_how_many_days_in_a_week",
+  "do_you_have_oriflame_product_use_in_your_home",
+  "do_you_use_wellness_products",
+  "what_is_your_monthly_budget_for_the_oriflame_product",
+  "do_you_have_a_whatsapp_business_installed_on_your_mobile",
+  "how_many_numbers_are_there_in_your_phone_bank",
+  "on_which_social_media_platforms_are_you_active",
+  "facebook",
+  "instagram",
+  "twitter",
+  "linkedin",
+  "how_many_friends_do_you_have_on_your_facebook_account",
+  "how_many_followers_do_you_have_on_your_instagram_account",
+  "how_many_followers_do_you_have_on_your_twitter_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "length": 10,
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "options": "Email"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "your_highest_level_in_oriflame",
+   "fieldtype": "Select",
+   "label": "Your highest level in Oriflame",
+   "options": "No level\n3%\n6%\n9%\n12%\n15%\n18%\n22%\nNo idea"
+  },
+  {
+   "fieldname": "how_long_have_you_been_in_oriflame",
+   "fieldtype": "Select",
+   "label": "How long have you been in Oriflame? ",
+   "options": "Starter\n1-3 months\n4-6 months\n7-12 months\n1-2 years\n2 year+"
+  },
+  {
+   "fieldname": "why_did_you_join_oriflame",
+   "fieldtype": "HTML",
+   "label": "Why did you join Oriflame?",
+   "options": "Why did you join Oriflame?<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "self_use",
+   "fieldtype": "Check",
+   "label": "Self use"
+  },
+  {
+   "default": "0",
+   "fieldname": "to_earn_money_by_selling_products",
+   "fieldtype": "Check",
+   "label": "To earn money by selling products."
+  },
+  {
+   "default": "0",
+   "fieldname": "to_earn_money",
+   "fieldtype": "Check",
+   "label": "To earn money."
+  },
+  {
+   "default": "0",
+   "fieldname": "self_identity",
+   "fieldtype": "Check",
+   "label": "Self identity"
+  },
+  {
+   "fieldname": "how_much_time_you_can_give_each_day_to_do_oriflame_business",
+   "fieldtype": "Data",
+   "label": "How much time you can give each day to do Oriflame business?"
+  },
+  {
+   "fieldname": "do_you_have_an_idea_about_oriflames_business_plan",
+   "fieldtype": "Select",
+   "label": "Do you have an idea about Oriflame's business plan?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "html1",
+   "fieldtype": "HTML",
+   "label": "What will motivate the most according to the Oriflame Income Plan?",
+   "options": "What will motivate the most according to the Oriflame Income Plan?<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "monthly_income",
+   "fieldtype": "Check",
+   "label": "Monthly Income"
+  },
+  {
+   "default": "0",
+   "fieldname": "royalty_income",
+   "fieldtype": "Check",
+   "label": "Royalty income"
+  },
+  {
+   "default": "0",
+   "fieldname": "cash_award",
+   "fieldtype": "Check",
+   "label": "Cash Award"
+  },
+  {
+   "default": "0",
+   "fieldname": "dream_programcar_and_house_fund",
+   "fieldtype": "Check",
+   "label": "Dream Program(Car and House Fund)"
+  },
+  {
+   "default": "0",
+   "fieldname": "national_and_international_conferences",
+   "fieldtype": "Check",
+   "label": "National and International Conferences"
+  },
+  {
+   "fieldname": "according_to_you_trainning",
+   "fieldtype": "Select",
+   "label": "According to you, training is required to succeed in the Oriflame business.",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "according_to_you_what",
+   "fieldtype": "Select",
+   "label": "According to you, what kind of training is needed to grow in the Oriflame business.",
+   "options": "Product based\nBusiness based\nBoth"
+  },
+  {
+   "fieldname": "which_range",
+   "fieldtype": "HTML",
+   "label": "Which range of Oriflame makes you attracted and you are interested to work in that field",
+   "options": "Which range of Oriflame makes you attracted and you are interested to work in that field?<br><br>"
+  },
+  {
+   "default": "0",
+   "fieldname": "skincare",
+   "fieldtype": "Check",
+   "label": "Skincare"
+  },
+  {
+   "default": "0",
+   "fieldname": "wellness",
+   "fieldtype": "Check",
+   "label": "Wellness"
+  },
+  {
+   "default": "0",
+   "fieldname": "colour_cosmetics",
+   "fieldtype": "Check",
+   "label": "Colour Cosmetics"
+  },
+  {
+   "default": "0",
+   "fieldname": "personal_care",
+   "fieldtype": "Check",
+   "label": "Personal Care"
+  },
+  {
+   "fieldname": "which_time_will_be_right_for_you_for_training",
+   "fieldtype": "Time",
+   "label": "Which time will be right for you for training."
+  },
+  {
+   "fieldname": "how_much_money",
+   "fieldtype": "Data",
+   "label": "How much money do you want to earn from Oriflame Monthly?"
+  },
+  {
+   "fieldname": "get_that_income",
+   "fieldtype": "Data",
+   "label": "The amount that you have fixed and with daily time- What do you think about how many months you can get that income?"
+  },
+  {
+   "fieldname": "you_get",
+   "fieldtype": "Data",
+   "label": "According to the Oriflame business plan, how many types of income do you get?"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "interacting_with_your_leader",
+   "fieldtype": "Time",
+   "label": "Which time will be right for you for interacting with your leader?"
+  },
+  {
+   "fieldname": "would_you_like_to_train_on_sundays_too",
+   "fieldtype": "Select",
+   "label": "Would you like to train on Sundays too?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "the_business_plan_should_be_how_many_days_in_a_week",
+   "fieldtype": "Select",
+   "label": "The business plan should be how many days in a week?",
+   "options": "Every Day\nAlternate Day\n3 days a week"
+  },
+  {
+   "fieldname": "do_you_have_oriflame_product_use_in_your_home",
+   "fieldtype": "Select",
+   "label": "Do you have Oriflame product use in your home?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "do_you_use_wellness_products",
+   "fieldtype": "Select",
+   "label": "Do you use wellness products?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "what_is_your_monthly_budget_for_the_oriflame_product",
+   "fieldtype": "Select",
+   "label": "What is your monthly budget for the Oriflame product?",
+   "options": "\u20b9 1000/-\n\u20b9 1000/- to  \u20b9 1500/-\n\u20b9 1500/- to \u20b9 2000/-\nMore than \u20b9 2000/-"
+  },
+  {
+   "fieldname": "do_you_have_a_whatsapp_business_installed_on_your_mobile",
+   "fieldtype": "Select",
+   "label": "Do you have a WhatsApp Business installed on your mobile?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "how_many_numbers_are_there_in_your_phone_bank",
+   "fieldtype": "Select",
+   "label": "How many numbers are there in your phone bank?",
+   "options": "100 To 200\n200 To 300\n300 To 500\n500 To 700\n700 To 1000\nMore than 1000"
+  },
+  {
+   "fieldname": "on_which_social_media_platforms_are_you_active",
+   "fieldtype": "HTML",
+   "label": "On which social media platforms are you active?",
+   "options": "On which social media platforms are you active?<br><br>"
+  },
+  {
+   "depends_on": "facebook",
+   "fieldname": "how_many_friends_do_you_have_on_your_facebook_account",
+   "fieldtype": "Data",
+   "label": "How many friends do you have on your Facebook Account?"
+  },
+  {
+   "depends_on": "instagram",
+   "fieldname": "how_many_followers_do_you_have_on_your_instagram_account",
+   "fieldtype": "Data",
+   "label": "How many followers do you have on your Instagram account?"
+  },
+  {
+   "depends_on": "twitter",
+   "fieldname": "how_many_followers_do_you_have_on_your_twitter_account",
+   "fieldtype": "Data",
+   "label": "How many followers do you have on your Twitter account?"
+  },
+  {
+   "default": "0",
+   "fieldname": "facebook",
+   "fieldtype": "Check",
+   "label": "FaceBook"
+  },
+  {
+   "default": "0",
+   "fieldname": "instagram",
+   "fieldtype": "Check",
+   "label": "Instagram"
+  },
+  {
+   "default": "0",
+   "fieldname": "twitter",
+   "fieldtype": "Check",
+   "label": "Twitter"
+  },
+  {
+   "default": "0",
+   "fieldname": "linkedin",
+   "fieldtype": "Check",
+   "label": "LinkedIn"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-11 18:30:01.960461",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "Synergy with Team Leader",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

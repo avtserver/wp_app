@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "creation": "2021-07-10 09:50:59.783418",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "email_address",
+  "mobile_number",
+  "reason_for_work_from_home",
+  "time_for_this_opportunity",
+  "product_based_business_opportunity",
+  "service_based_opportunity",
+  "monthly_income_are_you_expecting",
+  "suitable_time_for_communication_"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "email Address"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "reason_for_work_from_home",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Reason for Work From Home",
+   "options": "For Extra Income\ncareer choice before a job or business\nexplore more fields\nAlternative Income\nPart Time Income"
+  },
+  {
+   "fieldname": "time_for_this_opportunity",
+   "fieldtype": "Select",
+   "label": "Time for this opportunity ",
+   "options": "2-3 hours per day\n3-4 hours per day\nNot sure how much I will need\nFlexible time as per requirement"
+  },
+  {
+   "default": "0",
+   "fieldname": "product_based_business_opportunity",
+   "fieldtype": "Check",
+   "label": "Product based Business Opportunity"
+  },
+  {
+   "default": "0",
+   "fieldname": "service_based_opportunity",
+   "fieldtype": "Check",
+   "label": "Service Based Opportunity"
+  },
+  {
+   "fieldname": "monthly_income_are_you_expecting",
+   "fieldtype": "Data",
+   "label": "Monthly Income are you expecting"
+  },
+  {
+   "fieldname": "suitable_time_for_communication_",
+   "fieldtype": "Time",
+   "label": "Suitable time for communication ?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-10 10:03:17.886374",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "Business Opportunity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -106,7 +106,8 @@
    "fieldname": "gallery_image",
    "fieldtype": "Table",
    "label": "Gallery Image",
-   "options": "Member Gallery"
+   "options": "Member Gallery",
+   "reqd": 1
   },
   {
    "fieldname": "route",
@@ -131,7 +132,8 @@
   {
    "fieldname": "business_journey",
    "fieldtype": "Text Editor",
-   "label": "Business Journey "
+   "label": "Business Journey ",
+   "reqd": 1
   },
   {
    "collapsible": 1,
@@ -149,7 +151,8 @@
    "fieldname": "team_members",
    "fieldtype": "Table",
    "label": "Team Members",
-   "options": "Member Team"
+   "options": "Member Team",
+   "reqd": 1
   },
   {
    "collapsible": 1,
@@ -161,7 +164,8 @@
    "fieldname": "member_achievement_and_awards",
    "fieldtype": "Table",
    "label": "Member Achievement and Awards",
-   "options": "Member Achievement and Awards"
+   "options": "Member Achievement and Awards",
+   "reqd": 1
   },
   {
    "collapsible": 1,
@@ -196,6 +200,7 @@
   {
    "fieldname": "profile_video_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "PROFILE VIDEO"
   },
   {
@@ -228,7 +233,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2021-07-07 12:12:28.585136",
+ "modified": "2021-07-11 18:24:18.536820",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Oriflame Premium Member",

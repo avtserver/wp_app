@@ -46,8 +46,10 @@
         </div></div>
 
             <div class="third-sec">
+                                <iframe class="video-card" width="353" height="240" src="https://www.youtube.com/embed/tIef29XLYr4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 <!--                <iframe class="video-card" width="353" height="240"  src="{{ opmember.paste_youtube_video_link}}?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>-->
-                <iframe class="video-card" width="353" height="240" src="{{ opmember.paste_youtube_video_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+<!--                <iframe class="video-card" width="353" height="240" src="{{ opmember.paste_youtube_video_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>-->
             </div>
 
 
@@ -57,12 +59,12 @@
         <div class="cf-col1">
             <h3>DISCOVER YOUR HIDDEN BEAUTY WITH US</h3>
             <p>KINDLY FILL IN THE FORM FOR SELECTION OF CUSTOMIZED PRODUCTS SUITS YOU PERFECTLY!</p>
-            <a class="blue-cta-button" href="https://winnerspie.com/hidden-beauty-form?new=1&referred_by={{ opmember.name }}">Click Here</a>
+            <a class="blue-cta-button" href="https://adishunya.com/hidden-beauty-form?new=1&referred_by={{ opmember.name }}">Click Here</a>
         </div>
         <div class="cf-col2">
               <h3>WELLNESS WAVE</h3>
             <p>KINDLY FILL IN THE FORM FOR SELECTION OF CUSTOMIZED PRODUCTS SUITS YOU PERFECTLY!</p>
-            <a class="blue-cta-button" href="https://winnerspie.com/wellness-wave-form?new=1&referred_by={{ opmember.name }}">Click Here</a>
+            <a class="blue-cta-button" href="https://adishunya.com/wellness-wave-form?new=1&referred_by={{ opmember.name }}">Click Here</a>
         </div>
 
  </div>
@@ -73,7 +75,7 @@
 		<h2 class="title">Become a Brand Partner</h2>
 
 		<div class="mt-6">
-			<a href="https://winnerspie.com/become-a-brand-partner?new=1&referred_by={{ opmember.name }}" class="blue-cta-button">Join Today</a>
+			<a href="https://adishunya.com/become-a-brand-partner?new=1&referred_by={{ opmember.name }}" class="blue-cta-button">Join Today</a>
 		</div>
 
 		<div class="description">
@@ -112,58 +114,61 @@
 <div class="team-new-sec">
 <!--    <h1>Our Team</h1>-->
         <div class="team-card">
+               {% for member_team in opmember.team_members %}
             <div class="team-member">
                 <div class="team-img">
-                    <img src="/assets/wp_app/winnerspie/assets/images/team_01.jpg">
+                    <img src="{{member_team.team_member_picture}}">
                 </div>
-                <h3>Team Member 1</h3>
-                <p class="role"> Designation role</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque nisi perspiciatis reiciendis veritatis voluptatibus.</p>
+                <h3>{{member_team.team_member_name}}</h3>
+                <p class="role">{{member_team.desgination}}</p>
+                <p>{{member_team.short_intro}}</p>
                 <div class="social-media">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-google-plus-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-twitter-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> </a> </li>
+                    <li><a href="https://facebook.com/{{member_team.facebook_id}}"><i class="fab fa-facebook-square"></i> </a> </li>
+                    <li><a href="https://plus.google.com/{{member_team.google_id}}"><i class="fab fa-google-plus-square"></i> </a> </li>
+                    <li><a href="https://twitter.com/{{member_team.twitter_id}}"><i class="fab fa-twitter-square"></i> </a> </li>
+                    <li><a href="https://instagram.com/{{member_team.instagram_id}}"><i class="fab fa-instagram"></i> </a> </li>
 
-
-                </div>
-            </div>
-            <div class="team-member">
-                <div class="team-img">
-                    <img src="/assets/wp_app/winnerspie/assets/images/team_02.jpg">
-                </div>
-                <h3>Team Member 2</h3>
-                <p class="role"> Designation role</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque nisi perspiciatis reiciendis veritatis voluptatibus.</p>
-                    <div class="social-media">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-google-plus-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-twitter-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> </a> </li>
-
-
-                    </div>
-            </div>
-            <div class="team-member">
-                <div class="team-img">
-                    <img src="/assets/wp_app/winnerspie/assets/images/team_03.jpg">
-                </div>
-                <h3>Team Member 3</h3>
-                <p class="role"> Designation role</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque nisi perspiciatis reiciendis veritatis voluptatibus.</p>
-                <div class="social-media">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-google-plus-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-twitter-square"></i> </a> </li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> </a> </li>
 
 
                 </div>
             </div>
+                                    {% endfor %}
+
+<!--            <div class="team-member">-->
+<!--                <div class="team-img">-->
+<!--                    <img src="/assets/wp_app/winnerspie/assets/images/team_02.jpg">-->
+<!--                </div>-->
+<!--                <h3>Team Member 2</h3>-->
+<!--                <p class="role"> Designation role</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque nisi perspiciatis reiciendis veritatis voluptatibus.</p>-->
+<!--                    <div class="social-media">-->
+<!--                    <li><a href="#"><i class="fab fa-facebook-square"></i> </a> </li>-->
+<!--                    <li><a href="#"><i class="fab fa-google-plus-square"></i> </a> </li>-->
+<!--                    <li><a href="#"><i class="fab fa-twitter-square"></i> </a> </li>-->
+<!--                    <li><a href="#"><i class="fab fa-instagram"></i> </a> </li>-->
+
+
+<!--                    </div>-->
+<!--            </div>-->
+<!--            <div class="team-member">-->
+<!--                <div class="team-img">-->
+<!--                    <img src="/assets/wp_app/winnerspie/assets/images/team_03.jpg">-->
+<!--                </div>-->
+<!--                <h3>Team Member 3</h3>-->
+<!--                <p class="role"> Designation role</p>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto neque nisi perspiciatis reiciendis veritatis voluptatibus.</p>-->
+<!--                <div class="social-media">-->
+<!--                    <li><a href="#"><i class="fab fa-facebook-square"></i> </a> </li>-->
+<!--                    <li><a href="#"><i class="fab fa-google-plus-square"></i> </a> </li>-->
+<!--                    <li><a href="#"><i class="fab fa-twitter-square"></i> </a> </li>-->
+<!--                    <li><a href="#"><i class="fab fa-instagram"></i> </a> </li>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
         </div>
 
 </div>
-
 
 
 
@@ -176,23 +181,23 @@
 
 <div class="gl-container">
   <div class="img-grid">
-    <img src="/assets/wp_app/winnerspie/assets/images/slide_01.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/slide_02.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/slide_03.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/service_01.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/service_02.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/service_03.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/single_service_01.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/single_service_02.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/single_service_03.jpg" alt="">
-    <img src="/assets/wp_app/winnerspie/assets/images/single_service_04.jpg" alt="">
+      {% for member_galary in opmember.gallery_image %}
+      <a href="{{member_galary.image}}" class="image-popup gal-item"><img src="{{member_galary.image}}" alt=""></a>
+                              {% endfor %}
+
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/slide_02.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/slide_03.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/service_01.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/service_02.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/service_03.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/single_service_01.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/single_service_02.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/single_service_03.jpg" alt="">-->
+<!--    <img src="/assets/wp_app/winnerspie/assets/images/single_service_04.jpg" alt="">-->
 
 
   </div>
 </div>
-
-
-
 
 
 
@@ -209,27 +214,33 @@
 
 <div class="award-sec">
     <div class="award-card">
+                         {% for member_achievement_and_awards in opmember.member_achievement_and_awards %}
+
         <div class="a-card">
             <div class="award-img">
-            <img src="/assets/wp_app/winnerspie/assets/images/client-01.png">
+            <img src="{{member_achievement_and_awards.award_logo}}">
             </div>
-            <h2>Award Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ea inventore itaque, omnis quod sunt.</p>
+            <h2>{{member_achievement_and_awards.award_title}}</h2>
+            <p>{{member_achievement_and_awards.award_description}}</p>
+
+
         </div>
-        <div class="a-card">
-            <div class="award-img">
-            <img src="/assets/wp_app/winnerspie/assets/images/client-01.png">
-            </div>
-            <h2>Award Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ea inventore itaque, omnis quod sunt.</p>
-        </div>
-        <div class="a-card">
-            <div class="award-img">
-            <img src="/assets/wp_app/winnerspie/assets/images/client-01.png">
-            </div>
-            <h2>Award Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ea inventore itaque, omnis quod sunt.</p>
-        </div>
+                    {% endfor %}
+
+<!--        <div class="a-card">-->
+<!--            <div class="award-img">-->
+<!--            <img src="/assets/wp_app/winnerspie/assets/images/client-01.png">-->
+<!--            </div>-->
+<!--            <h2>Award Title</h2>-->
+<!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ea inventore itaque, omnis quod sunt.</p>-->
+<!--        </div>-->
+<!--        <div class="a-card">-->
+<!--            <div class="award-img">-->
+<!--            <img src="/assets/wp_app/winnerspie/assets/images/client-01.png">-->
+<!--            </div>-->
+<!--            <h2>Award Title</h2>-->
+<!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ea inventore itaque, omnis quod sunt.</p>-->
+<!--        </div>-->
     </div>
     
 </div>
@@ -338,7 +349,7 @@
               </p>
                 </div>
                         <div class="nblog_button_sec">
-                    <a href="https://winnerspie.com/{{blog_post.route}}" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>READ MORE</a>
+                    <a href="https://adishunya.com/{{blog_post.route}}" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>READ MORE</a>
 
                 </div>
             </div>

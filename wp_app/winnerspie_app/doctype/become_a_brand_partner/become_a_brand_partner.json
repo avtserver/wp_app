@@ -19,8 +19,8 @@
   "state",
   "citydistrict",
   "column_break_13",
-  "locality",
   "address",
+  "country",
   "other_details_section",
   "referred_by",
   "sponsored_by",
@@ -107,11 +107,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "locality",
-   "fieldtype": "Data",
-   "label": "Locality"
-  },
-  {
    "fieldname": "address",
    "fieldtype": "Small Text",
    "label": "Address"
@@ -130,8 +125,7 @@
    "fieldname": "select_document_type",
    "fieldtype": "Select",
    "label": "Select Document Type",
-   "options": "Aadhaar Card\nVoter ID\nPassport\nDriving License\nState Domicile Certificate",
-   "reqd": 1
+   "options": "Aadhaar Card\nVoter ID\nPassport\nDriving License\nState Domicile Certificate"
   },
   {
    "fieldname": "enter_document_number_mentioned_on_your_kyc_document",
@@ -184,11 +178,17 @@
   {
    "fieldname": "column_break_26",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-08 10:49:46.539480",
+ "modified": "2021-07-10 18:53:11.006560",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Become a Brand Partner",
