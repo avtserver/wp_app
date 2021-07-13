@@ -14,7 +14,8 @@
   "product_based_business_opportunity",
   "service_based_opportunity",
   "monthly_income_are_you_expecting",
-  "suitable_time_for_communication_"
+  "suitable_time_for_communication_",
+  "referred_by"
  ],
  "fields": [
   {
@@ -71,11 +72,17 @@
    "fieldname": "suitable_time_for_communication_",
    "fieldtype": "Time",
    "label": "Suitable time for communication ?"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Referred By"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 10:03:17.886374",
+ "modified": "2021-07-13 17:55:43.080388",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Business Opportunity",

@@ -13,18 +13,8 @@
  "is_default": 0,
  "is_standard": 1,
  "label": "WinnersPie",
- "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Sales Promosion",
-   "link_to": "Sales Promotion",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  }
- ],
- "modified": "2021-07-12 00:41:46.909774",
+ "links": [],
+ "modified": "2021-07-13 19:37:29.565931",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "WinnersPie",
@@ -69,10 +59,10 @@
    "type": "DocType"
   },
   {
-   "doc_view": "List",
-   "label": "Sales Promotion List",
-   "link_to": "Sales Promotion",
-   "type": "DocType"
+   "doc_view": "Report Builder",
+   "label": "Important links",
+   "link_to": "Important Links",
+   "type": "Report"
   }
  ]
 }

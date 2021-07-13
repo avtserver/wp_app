@@ -12,6 +12,7 @@
   "column_break_3",
   "email_id",
   "city",
+  "referred_by",
   "section_break_7",
   "your_highest_level_in_oriflame",
   "how_long_have_you_been_in_oriflame",
@@ -338,11 +339,17 @@
    "fieldname": "linkedin",
    "fieldtype": "Check",
    "label": "LinkedIn"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Referred By"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-11 18:30:01.960461",
+ "modified": "2021-07-13 18:23:14.726968",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Synergy with Team Leader",
