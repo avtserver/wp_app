@@ -14,9 +14,7 @@
   "catalogue",
   "column_break_5",
   "description",
-  "published",
-  "section_break_8",
-  "content"
+  "published"
  ],
  "fields": [
   {
@@ -44,13 +42,7 @@
    "label": "Published"
   },
   {
-   "fieldname": "content",
-   "fieldtype": "Text Editor",
-   "ignore_xss_filter": 1,
-   "in_global_search": 1,
-   "label": "Content"
-  },
-  {
+   "default": "0",
    "fieldname": "catalogue",
    "fieldtype": "Attach",
    "label": "Catalogue"
@@ -69,10 +61,6 @@
   {
    "fieldname": "column_break_5",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_8",
-   "fieldtype": "Section Break"
   }
  ],
  "icon": "fa fa-quote-left",
@@ -80,7 +68,7 @@
  "is_published_field": "published",
  "links": [],
  "max_attachments": 5,
- "modified": "2021-07-13 14:32:48.580735",
+ "modified": "2021-07-13 15:58:56.798676",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Catalogue Gallery",

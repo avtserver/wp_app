@@ -32,7 +32,7 @@
                 <span> Mobile Number : {{ opmember.mobile_number }}</span>
 
             </div>
-            <a class="blog-post_cta" href="#">
+            <a class="blog-post_cta" href="https://www.facebook.com/{{opmember.facebook_id}}">
                 Follow me
             </a>
             <div class="social-media-main">
@@ -372,16 +372,27 @@
 <div class="header">
     <h2>Catalogue Gallery</h2>
 </div>
-abc
-{% for catalogue_gallery in opm_cat %}
-abc
-{{catalogue_gallery.title}}
-{{catalogue_gallery.name}}
-{{catalogue_gallery.description}}
 
-{% endfor %}
+<div class="team-new-sec">
+<!--    <h1>Our Team</h1>-->
+        <div class="team-card">
+       {% for catalogue_gallery in opm_cat %}
 
+            <div class="team-member">
+                <div class="cat-thumb">
+                    <img src="{{catalogue_gallery.thumbnail}}">
+                </div>
+                <h3>{{catalogue_gallery.title}}</h3>
 
+                <p>{{catalogue_gallery.description}}</p>
+
+<div class="nblog_button_sec">
+                    <a href="https://winnerspie.com/{{catalogue_gallery.catalogue}}" class="btn btn--with-icon"><i class="btn-icon fa fa-long-arrow-right"></i>Download</a>
+                </div>
+            </div>
+                                    {% endfor %}
+        </div>
+</div>
 
 
 
