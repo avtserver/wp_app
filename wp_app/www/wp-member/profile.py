@@ -18,7 +18,11 @@ def get_context(context):
                             read_time, published_on, blog_intro, content FROM `tabBlog Post` WHERE blogger='{context.opmember.blogger}' ORDER BY creation DESC;""",
                                       as_dict=True)
         context.opm_blog = opm_blog
-
+        opm_cat = frappe.db.sql(f"""
+                            SELECT name, creation, title, blogger,description,thumbnail,catalogue,
+                            content FROM `tabCatalogue Gallery` WHERE blogger='{context.opmember.blogger}' ORDER BY creation DESC;""",
+                                 as_dict=True)
+        context.opm_cat = opm_cat
     except Exception as e:
         frappe.local.flags.redirect_location = '/404'
         raise frappe.Redirect

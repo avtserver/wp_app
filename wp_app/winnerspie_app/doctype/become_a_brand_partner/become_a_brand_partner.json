@@ -21,18 +21,18 @@
   "column_break_13",
   "address",
   "country",
-  "other_details_section",
-  "referred_by",
-  "sponsored_by",
-  "column_break_19",
-  "sponsor_id",
   "kyc_document_details_section",
   "select_document_type",
   "enter_document_number_mentioned_on_your_kyc_document",
   "kyc_documents",
   "column_break_26",
   "pan_card",
-  "nominee"
+  "nominee",
+  "other_details_section",
+  "referred_by",
+  "sponsored_by",
+  "column_break_19",
+  "sponsor_id"
  ],
  "fields": [
   {
@@ -151,17 +151,20 @@
   {
    "fieldname": "sponsored_by",
    "fieldtype": "Data",
-   "label": "Sponsored By"
+   "label": "Sponsored By",
+   "read_only": 1
   },
   {
    "fieldname": "referred_by",
    "fieldtype": "Data",
-   "label": "Referred By"
+   "label": "Referred By",
+   "read_only": 1
   },
   {
    "fieldname": "sponsor_id",
    "fieldtype": "Data",
-   "label": "Sponsor ID"
+   "label": "Sponsor ID",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_6",
@@ -188,7 +191,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 18:53:11.006560",
+ "modified": "2021-07-11 18:51:01.532474",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Become a Brand Partner",

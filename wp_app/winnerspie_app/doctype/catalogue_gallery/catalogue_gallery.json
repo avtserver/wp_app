@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "autoname": "field:title",
+ "creation": "2021-07-13 12:29:13.753038",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "blogger",
+  "thumbnail",
+  "catalogue",
+  "column_break_5",
+  "description",
+  "published",
+  "section_break_8",
+  "content"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Title",
+   "no_copy": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "blogger",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Blogger",
+   "options": "Blogger",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Text Editor",
+   "ignore_xss_filter": 1,
+   "in_global_search": 1,
+   "label": "Content"
+  },
+  {
+   "fieldname": "catalogue",
+   "fieldtype": "Attach",
+   "label": "Catalogue"
+  },
+  {
+   "fieldname": "thumbnail",
+   "fieldtype": "Attach Image",
+   "label": "Thumbnail"
+  },
+  {
+   "description": "Description for listing page, in plain text, only a couple of lines. (max 200 characters)",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "icon": "fa fa-quote-left",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "max_attachments": 5,
+ "modified": "2021-07-13 14:32:48.580735",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "Catalogue Gallery",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Blogger",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "blog",
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "title_field": "title",
+ "track_changes": 1
+}

@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "autoname": "field:sponsor_id",
+ "creation": "2021-07-11 23:38:04.397894",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sponsor_id",
+  "brand_partner_form",
+  "hidden_beauty_form",
+  "wellness_wave_form",
+  "business_opportunity_form",
+  "synergy_survey_form"
+ ],
+ "fields": [
+  {
+   "fieldname": "brand_partner_form",
+   "fieldtype": "Data",
+   "label": "Brand Partner Form"
+  },
+  {
+   "fieldname": "hidden_beauty_form",
+   "fieldtype": "Data",
+   "label": "Hidden Beauty Form"
+  },
+  {
+   "fieldname": "wellness_wave_form",
+   "fieldtype": "Data",
+   "label": "Wellness Wave Form"
+  },
+  {
+   "fieldname": "business_opportunity_form",
+   "fieldtype": "Data",
+   "label": "Business Opportunity Form"
+  },
+  {
+   "fieldname": "synergy_survey_form",
+   "fieldtype": "Data",
+   "label": "Synergy Survey Form"
+  },
+  {
+   "fieldname": "sponsor_id",
+   "fieldtype": "Link",
+   "label": "Sponsor ID",
+   "options": "Oriflame Premium Member",
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2021-07-13 12:07:32.941716",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "Links for Sharing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

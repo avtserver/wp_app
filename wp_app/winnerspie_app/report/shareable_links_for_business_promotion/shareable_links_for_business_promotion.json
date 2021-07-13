@@ -1,0 +1,61 @@
+{
+ "add_total_row": 0,
+ "columns": [
+  {
+   "fieldname": "brand_partner_form",
+   "fieldtype": "Data",
+   "label": "Brand Partner",
+   "width": 0
+  },
+  {
+   "fieldname": "hidden_beauty_form",
+   "fieldtype": "Data",
+   "label": "Hidden Beauty",
+   "width": 0
+  },
+  {
+   "fieldname": "wellness_wave_form",
+   "fieldtype": "Data",
+   "label": "Wellness wave",
+   "width": 0
+  },
+  {
+   "fieldname": "business_opportunity_form",
+   "fieldtype": "Data",
+   "label": "Business Opportunity",
+   "width": 0
+  },
+  {
+   "fieldname": "synergy_survey_form",
+   "fieldtype": "Data",
+   "label": "Synergy Survey",
+   "width": 0
+  }
+ ],
+ "creation": "2021-07-13 12:13:27.151273",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "modified": "2021-07-13 12:14:29.058972",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "Shareable links for Business Promotion",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Links for Sharing",
+ "report_name": "Shareable links for Business Promotion",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Oriflame Premium Member"
+  }
+ ]
+}

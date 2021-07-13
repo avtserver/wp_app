@@ -1,0 +1,78 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-07-11 20:07:29.136486",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "crm",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "WinnersPie",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Promosion",
+   "link_to": "Sales Promotion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2021-07-12 00:41:46.909774",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "WinnersPie",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Business Opportunity",
+   "link_to": "Business Opportunity",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Become a Brand Partner",
+   "link_to": "Become a Brand Partner",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Hidden Beauty",
+   "link_to": "HBeauty",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Wellness Wave",
+   "link_to": "WWave",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Member's Synergy",
+   "link_to": "Synergy with Team Leader",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "WinnersPie Premium Member",
+   "link_to": "Oriflame Premium Member",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Sales Promotion List",
+   "link_to": "Sales Promotion",
+   "type": "DocType"
+  }
+ ]
+}
