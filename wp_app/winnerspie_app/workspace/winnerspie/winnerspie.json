@@ -14,7 +14,7 @@
  "is_standard": 1,
  "label": "WinnersPie",
  "links": [],
- "modified": "2021-07-13 19:56:51.268632",
+ "modified": "2021-07-13 20:37:58.470928",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "WinnersPie",
@@ -61,6 +61,12 @@
   {
    "doc_view": "",
    "label": "Links",
+   "link_to": "Links for Sharing",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Test",
    "link_to": "Links for Sharing",
    "type": "DocType"
   }

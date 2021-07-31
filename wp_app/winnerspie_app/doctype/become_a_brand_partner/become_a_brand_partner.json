@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "format:Ref-{MM}-{DD}-{######}",
  "creation": "2021-07-07 15:33:14.945206",
  "doctype": "DocType",
@@ -32,7 +33,9 @@
   "referred_by",
   "sponsored_by",
   "column_break_19",
-  "sponsor_id"
+  "sponsor_id",
+  "published",
+  "route"
  ],
  "fields": [
   {
@@ -187,11 +190,24 @@
    "fieldtype": "Link",
    "label": "Country",
    "options": "Country"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2021-07-11 18:51:01.532474",
+ "modified": "2021-07-31 12:54:30.079783",
  "modified_by": "Administrator",
  "module": "WinnersPie App",
  "name": "Become a Brand Partner",
@@ -233,6 +249,7 @@
    "write": 1
   }
  ],
+ "route": "become-brand-partner",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

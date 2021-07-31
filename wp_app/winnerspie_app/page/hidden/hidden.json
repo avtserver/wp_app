@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2021-07-28 21:45:45.204465",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-07-28 21:46:13.040221",
+ "modified_by": "Administrator",
+ "module": "WinnersPie App",
+ "name": "hidden",
+ "owner": "Administrator",
+ "page_name": "Hidden",
+ "roles": [
+  {
+   "role": "Oriflame Premium Member"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Hidden"
+}
